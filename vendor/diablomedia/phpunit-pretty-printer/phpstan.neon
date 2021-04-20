@@ -1,0 +1,4 @@
+parameters:
+    ignoreErrors:
+        # this constant (and resulting variable) is user-defined in PHPUnit configuration/bootstrap
+        - '#Variable \$timeColor might not be defined.#'

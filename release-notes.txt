@@ -1,0 +1,2683 @@
+
+ ______                      _    _      _           _           _
+|  ____|                    | |  | |    | |         | |         | |
+| |__ __ ___   _____  ___   | |__| | ___| |_ __   __| | ___  ___| | __
+|  __/ _` \ \ / / _ \/ _ \  |  __  |/ _ \ | '_ \ / _` |/ _ \/ __| |/ /
+| | | (_| |\ V /  __/ (_) | | |  | |  __/ | |_) | (_| |  __/\__ \   <
+|_|  \__,_| \_/ \___|\___/  |_|  |_|\___|_| .__/ \__,_|\___||___/_|\_\
+                                          | |
+                                          |_|
+|====================================================
+|   v4.4.5
+|====================================================
+Hot Fix patch
+
+### Bug fixes
+- Issue fixed for Mobile app during login
+- File manager pagination issue fixed
+
+|====================================================
+|   v4.4.4
+|====================================================
+Laravel security update and bugfixes
+
+v4.4.4 updates the core framework version to **v6.20.16** which introduces major updates in the way cookies and sessions are stored and maintained. Since the update fixes some security vulnerabilities in session and cookie management of the framework it's recommended to update the Faveo system to v4.4.4 immediately. This release also fixes some pesky bugs which were ruining your experience with the system.
+
+### Updates
+- Updated Laravel framework to v6.20.16 with security patch for cookies and session management
+- Implemented pagination in file manager to load only 25 files at once with scrolling option
+
+### Bug Fixes
+- LDAP user import issue
+- File manager hangs up with a large number of files in storage
+- Incorrect message on check update page after updating the system
+- Minor UI issues
+
+>NOTE: As this update patches some security vulnerabilities in the system so all old sessions and cookies will be invalidated after the update. All agents and users might need to log in again to start a new session.
+
+For technical changelog see https://github.com/ladybirdweb/faveo-helpdesk-advance/blob/master/ChangeLogs.md#v444
+
+|====================================================
+|   v4.4.3
+|====================================================
+Hot fix patch for autoupdate
+
+- Fixes failure cases of autoupdate possibly occuring due to opcache enabled on the servers.
+- Fixed File manager UI for disabled options
+
+For technical changelog see https://github.com/ladybirdweb/faveo-helpdesk-advance/blob/master/ChangeLogs.md#v443
+
+|====================================================
+|   v4.4.2
+|====================================================
+Hot fix patch to fix issue with auto updating the systems
+
+For technical changelog see https://github.com/ladybirdweb/faveo-helpdesk-advance/blob/master/ChangeLogs.md#v442
+
+|====================================================
+|   v4.4.0
+|====================================================
+We have bundled various enhancements and feature updates in v4.4.0 to make the Faveo Helpdesk better and more useful for businesses to support their customer issues in a better-organized manner. Along with new updates, v4.4.0 also provides patches for various pesky bugs.
+
+### Features
+- #### Improved File Manager
+  - Added Amazon S3 storage
+- #### Added Ticket Parent Child Relation
+  - User can link multiple tickets (children) to one ticket(parent)	
+	
+### Enhancements 
+- #### Improved auto update
+  - Check Faveo dependencies before auto update also as it is for probe currently.
+  - A version can be set as private and restricted. If private then user won’t be able to see that release.
+  - If restricted then user need to update upto that version first before updating to later versions.
+  - Clients would be able to see previous released versions also.
+
+- #### Admin panel Vue conversion
+  - API module converted to Vue
+  - System module converted to Vue
+  - Webhook module converted to Vue
+
+- Added Article comment enable/disable functionality
+- User and Permission linking improved
+- Removed add and delete functionality from Plugin and Language index page
+- Showing member count in organization index page
+- Removed extra routes from web.php file
+- Enhanced agent/admin first name and last name validation
+- Removed dashboard statistics module from admin panel
+- Added assignee option while forking
+- Increased ‘ticket number’ prefix size to 8 characters
+- Removed website and author column from plugins index page
+- Allowed only JPEG, JPG and PNG image extensions for profile pic
+
+### Bugfixes
+- Fixed KB publish time and SEO overwrite issue
+- Fixed custom field issue of ticket settings page
+- Fixed alert message issue of time zone field in business hours module
+- Fixed top customer analysis view by issue
+- Fixed reply ticket issue
+- Fixed whatsapp ticket fetch issue
+- Fixed organization update without attachment issue
+- Fixed disabling of 2FA issue
+- Fixed phone number and extension issue
+- Fixed tawk sending email issue while ticket creation
+- Fixed tawk ticket creation without department
+- Fixed ticket number duplicate issue
+- Fixed ticket activity log showing no records
+- Fixed change requester issue while user deletion
+- Fixed organization manager deactivating user issue
+- Fixed ticket cc not receiving mail when agent replies on ticket
+- Fixed client panel package view  redirection issue
+- Fixed sending SLA escalation issue when ticket is assigned to team(without team lead)
+
+|====================================================
+|   v4.3.1
+|====================================================
+Hotfix release for critical bugs in workflow/listeners and SLA
+
+We have squashed the critical bug we found in the last release. Workflow, SLA and listeners will be working without errors now.
+
+|====================================================
+|   v4.3.0
+|====================================================
+We have bundled various enhancements and feature updates in v4.3.0 to make the Faveo Helpdesk better and more useful for businesses to support their customer issues in a better-organized manner. Along with new updates, v4.3.0 also provides patches for various pesky bugs.
+
+### Updates
+- #### Form Builder updates
+The custom form builder is an essential and critical module of Faveo that allows customizing the system as per your industry and gather all required information from your customers so that agents can solve the issues effectively and efficiently. We have made various improvements in the Form builder components that work behind the scenes in the system. Though we do not have anything to show off for Form Builder using screenshots or screencast GIFs but rest assured the Form builder has improved a lot.
+
+* #### Distinct Ticket Activity logs
+In Faveo, agents and clients can perform various actions on the ticket other than replying to the tickets. Though Faveo already had logs for maintaining all such activities performed by different users on the tickets but those logs were very basic and showed limited information. It somewhat helped to analyze the actions taken on the tickets but still resulted in ambiguity and confusion to identify all changes on the tickets and what caused them. 
+Keeping all these challenges in mind we are releasing better and more detailed **Ticket activity logs** which help to identify those changes. These new activity logs can support to identify
+&nbsp;&nbsp;  * Which workflows/listeners were enforced on the tickets.
+&nbsp;&nbsp;  * Which update caused the SLA update
+ 
+Additionally, we have moved all activities logs into different tab that removes the noise from the timeline of conversations and helps agents to focus on replies made by clients or other agents.
+![ticket-activity-log](https://user-images.githubusercontent.com/10759797/102046024-7348b900-3e00-11eb-83ff-90df30013046.gif)
+
+
+- #### Improved file manager
+We have changed the file manager used in the system to attach or upload attachments on the tickets, Knowledge base articles, and other places in the system. Now when you upload a file using the "Add media" or "Attachment" option new file manager will appear as shown in the image below
+![Screenshot 2020-12-14 at 10 59 58 AM](https://user-images.githubusercontent.com/10759797/102043899-b18fa980-3dfb-11eb-8e68-20b158671a79.png)
+As you can see in the image above the new file manager is full of rich options that allow you to handle user uploaded files and attachments in the system in a better way. 
+
+
+- #### Admin panel Vue conversion
+To achieve our goal to make Faveo faster and optimized. We are continuously working on implementing the latest technologies in the system. After converting the client panel of Faveo into Vue we are now transferring our focus to converting agent and admin into Vue so we can provide the same seamless experience to the agents who actually use the system day in and day out to serve your business. This update converts various settings pages in the Admin panel into Vue.
+
+### Bug fixes
+ * Azure users are unable to login.
+ * Select fields options ordering issue.
+ * Teams data table does not show teams that do not have any lead.
+ * Admin panel settings and sidebar mismatch.
+ * System email appears in the agent list select options.
+ * Various UI and other minor issues.
+
+For technical changelog see https://github.com/ladybirdweb/faveo-helpdesk-advance/blob/master/ChangeLogs.md#v430
+
+|====================================================
+|   v4.2.0
+|====================================================
+In this version, we have updated our editor interface and changes our WYSIWYG editor to [TinyMCE Community](https://www.tiny.cloud/get-tiny/self-hosted) for a better experience so your agents can maintain KB articles and express themselves creatively. Along with this it also fixes various minor bugs that do not break your system but still give us nightmares.
+
+### Updates
+- TinyMCE Editor added
+TinyMCE is a widely used rich text editor on the internet. We have added TinyMCE editor to enhance your experience so you can format your reply to clients, KB articles, and most places that use text area as you like.
+
+NOTE: As the editor has been changed you might encounter few changes while editing existing KB articles. So we request you to check all the Articles and save their image
+
+- Active Directory location mapping
+Now LDAP plugin integration allows you to map users with their AD location in Faveo. So the location of users can also be imported and mapped in the system via LDAP.
+
+- CRTWorkflow Plugin
+CRTWorkflow is short for creating tickets via workflow. This plugin allows the admin to create new tickets via workflow. It links recur tickets with workflow so when it is enabled admin can select the recur tickets in workflow action. If the workflow with recur action gets enforced system will create new tickets with the details available in the recur ticket.
+
+### Bug fixes
+- Recur ticket list shows random time
+- Recur does not alert on invalid name length
+- Saving mobile number with Canada's country code still shows US flag
+- Allows adding multiple attachments in ticket creation
+- Sometimes client UI navigation shows two caret icons
+- Assign list showing all users irrespective of department and permissions
+- Internal note icon and count missing
+- Deleted users are appearing in Team and Department member's list
+- Issue while sorting users with username in organization view >> organization department user list
+- Logo in an oval shape in the dashboard does not look nice
+- Various UI issues and refinements
+
+For technical changelog see https://github.com/ladybirdweb/faveo-helpdesk-advance/blob/master/ChangeLogs.md#v420
+
+|====================================================
+|   v4.1.1
+|====================================================
+This release provides hotfix patches for some functional and UI bugs we found in v4 and also squashes few minor bugs.
+
+### Bug fixed
+- LDAP login getting disabled after updating to v4.
+- Not able to import more than 100 users from Azure AD.
+- Unable to create approval workflow and SD CAB with the same name.
+- The date does not show up in the correct order in the report charts.
+- Various UI elements corrections
+- Not able to reply to the tickets created from other sources except twitter when the twitter plugin is enabled.
+- Mail of deactivated users is getting fetched as tickets.
+- Able to quote internal notes for a reply
+- Exporting ticket PDF for tickets containing Cyrillic script text for languages like Russian and Bulgarian does show the text correctly in the exported PDF.
+
+For technical changelog see https://github.com/ladybirdweb/faveo-helpdesk-advance/blob/master/ChangeLogs.md#v411
+
+|====================================================
+|   v4.1.0
+|====================================================
+Following the updates, in v4.0 we have updated the looks and style of the Faveo UI by updating the frontend theme AdminLTE to the latest version. Faveo v4.1.0 also updates bootstrap and other UI libraries being used in the system. It also provides fixes for some major bugs in the system.
+
+### Updates
+- #### New look for admin and agent panel
+v4.1.0 updates AdminLTE and bootstrap version which changes the look of the system. Though all the elements are at the same place as before the update in the theme makes them look new and more interesting.
+- #### Manage tasks via workflow
+Now you can create and append tasks on the ticket using workflows. In workflow action, you can define to link a ticket with a set of tasks that are enforced if the ticket satisfies the certain conditions and rules you set in the workflow.
+- #### Update tags/labels and requester via workflow
+Similarly, we have added new actions in the workflow which allows you to add new tags/labels and also update the requester of the ticket using workflows. 
+- #### Search requester with organisation name
+Now you can search requester based on the organization they are from. So if you know someone is from an organization called "Google" in the system but you do not recall their name while creating the ticket you can simply type "Google" in the requester field and you will be provided with the list of all the members of that organization in the system.
+- #### Attach Assets on ticket creation
+If you use ServiceDesk to manage your IT assets, many times you want to mention an asset or link an asset with the ticket which has the issues. While in the older version you had to link the assets after creating the ticket. This update provides a field called "Assets" in the ticket form which allows users to link the assets on the ticket while creating a ticket.
+- #### Reply to tweets
+Twitter plugin update now allows you to reply back to tweets directed to your account from the system. 
+- #### Add description during forwarding a ticket
+Now you can add a custom description and also forward the attachment of the ticket while forwarding tickets.
+- #### New custom plugin for Alliance broadband
+Custom plugin for alliance broadband no more details required in release notes related to it.
+
+### Bug fixes
+- Ordering issues in SLA/Workflow/Listener
+- System does not work when open_basedir restriction is enabled
+- In workflow tag 
+- Various UI and minor issues
+
+### Changelog
+- Parameters in user create API has been modified.
+  - `mobile_phone` has been changed to `mobile`
+  - `work_phone` has been changed to `phone_number`
+  - At least one of `user_name`, `email` or `mobile` is required for creating a user via API
+
+NOTE: This is a beta update for UI changes, if you found any issues and bugs in the system do report it to us at support@ladybirdweb.com
+
+For technical changelog see https://github.com/ladybirdweb/faveo-helpdesk-advance/blob/master/ChangeLogs.md#v410
+
+|====================================================
+|   v4.0.1
+|====================================================
+In v4.0.0 we had updated the Laravel framework's version to v6.18.34 which had some breaking changes the way the framework handles cookies and auth sessions. Which was causing the issues during auto-updating the application from older versions to v4.0.0. This release is a hotfix which fixes this issue by downgrading the Laravel version to v6.18.26 which is the last stable release for non-breaking changes.
+
+### Bug fixes
+- #### Auto-update failure due to session/cookie expiration fixed
+Due to breaking changes in the framework updating the application from the auto-update module without taking backup results in the failure of the update. 
+
+- #### Auto-update failure due to reCaptcha settings in the older versions
+Additionally, if you had added reCaptcha in the older system and removed/deactivated, it again causes the failure in the update of the application.
+
+- #### Recurring tickets do not create tickets
+While creating recur tickets if you select start and end time as the same date then the system was failing to create the recurring tickets.
+
+For technical changelog see https://github.com/ladybirdweb/faveo-helpdesk-advance/blob/master/ChangeLogs.md#v401
+
+
+|====================================================
+|   v4.0.0
+|====================================================
+This release introduces various major changes and improvements in the system. It updates the implementation of various modules to implement the correct business logic and remove any issues in the module.
+As v4.0.0 suggests, this release contains various major changes which are backward-incompatible. So after updating to this version you will not be able to downgrade the system to the older versions.
+
+## Updates
+
+### Laravel Updates
+Laravel framework has been updated to the latest releases version of the framework for v6.
+
+### Facebook Plugin 2.0
+Facebook plugin v2 has been developed which uses the latest messenger APIs for fetching the ticket and replying on the tickets and post reply back to Facebook.
+In the older version, the old API and access permission for the APIs were misleading, and getting the approval for the Facebook app to use with Faveo was a tedious task. This new implementation with v7 APIs makes the process faster and less likely for your apps to get disapproved by the Facebook team.
+This update also lets supports media attachment fetching in the ticket from Facebook. Ticket will be fetched with the attachments and you can share the files during replying on the tickets from Faveo. The files will be shared in the reply message on messenger to your clients.
+
+### Support for Google reCaptcha v3
+Faveo now supports invisible reCaptcha or reCaptcha v3 by google. In the settings page, you can select the version of reCaptcha you want to use and set up the reCaptcha on your system easily. Recaptcha settings also allow defining places to use reCaptcha like KB comments, login, etc.
+
+### Azure AD support added
+We have added additional support in the LDAP plugin to allow using Azure AD. Now you can setup Faveo to import users from you Azure AD and allow your users to login with their Azure account.
+
+### Ticket number assignment
+Few clients have reported and we found the rare cases where the same ticket number was being assigned to multiple tickets. It creates multiple duplicates tickets with the same number in the system. We have changed the ticket number settings to fix the issue.
+Now in the ticket number setting you can only define the prefix to be used during assigning the id to the tickets. You can also decide and set this prefix for tickets in the workflow. So the tickets that match the workflow condition will have the custom number sequence which is set in the workflow. This allows you to manipulate ticket numbers according to different conditions and set different ticket numbers according to your requirement.
+
+### Ambiguity in account activation and verification logic removed
+For a long time, there was confusion in the status of the account in the system. Whether the account is active or verified it was hard to distinguish between them. It does not impact the user login and data in the existing system in any way but it's good that we have figured out the mystery and have it implemented correctly.
+Now by default, all the accounts registered in the system will be set as active. No verification is required for activating the account. Agents can simply deactivate and activate the account according to the permission they have.
+Verification is now at the entity level, which means that the account is neither verified nor non-verified, it's the email address or mobile number linked to the account which will be verified or non verified. Email/mobile will be verified by default bases on the way or channel from where the users are getting registered in the system. Agents can manually set email and mobile verified from the user's profile the same as before.
+
+### Login and registration process corrected
+We have been inspecting our codebase and correcting/refactoring different modules for correct implementation to make our life easier. Though it might not be important for you to know, we wanted to put it out so in case you face issues in log in you can contact us.
+
+### Agents have regained their power
+Agents can now again add internal notes on the tickets which they have requested. As in the last release, agents were restricted to not add internal notes on the tickets which they have requested as owner.
+
+### Telephony Plugin v3
+The telephony plugin has been updated to v3. Telephony plugin now uses websockets to send the alerts and information about the incoming calls to the logged in agents, if they get a call on their work number via IVR.
+The simple popup appears when the call starts and ends with the information of the caller. Agents can add notes by clicking on the popup while they talk on the phone. At the end of the call they can simply create the new ticket for the call or add the call to an existing ticket of the user.
+
+### User account deactivation and added user account deletion
+Corrected the implementation of account deactivation in the system. We have also worked on the long requested feature of deleting the user account to make the system compliant with GDPR.
+
+ - #### Account deactivation
+Use account deactivation was already available in the system, but it has issues underneath. We worked to fix those issues and make the module more robust and better. Admin have to give permission to agents so that they can deactivate the users and agents. When the user/agents is being deactivated agent might have to select what should happen to the ticket requested by them or the tickets assigned to them.
+
+ - #### Account deletion
+Faveo now allows deleting the user account. Deleting users will delete all their personal information and files from the system, such as their contact details, tickets owned by them, the files and images uploaded by them. User account must be deactivated before it can be deleted. Similar to deactivation admin have to give permission to agents so that they can delete the users and agents
+
+## Bug Fixes
+- Custom user field values are showing on the tickets.
+- Issues in SLA plan update
+- Field ordering does not work in Form groups with a large number of fields
+- Users can generate and download PDF of any ticket by using their ID.
+- The batch ticket creation option is back
+- The department not showing in SLA/workflow/listener while creating.
+- Custom API fields are not loading in forms
+- Fixes slow searching in the data tables
+- Add media butting not working in an organization forms
+- Articles are showing twice in KB
+- Issues with updating LDAP users
+- miscellaneous minor bugs and issues
+- A dropdown list appears in random order
+- Status tab order in client panel my tickets page
+- Issues in system logs
+- Various UI issues
+
+
+## Changelog
+- Auto-update and Maintainance  page UI improvements
+- User login restriction process changed
+- User login method corrected
+    Removed old garbage code and wrote new methods for simplifying the login module code
+- User creation process or user registration process corrected
+   Removed old garbage code and wrote new methods for simplifying the registration code
+- User edit process corrected
+   Removed old garbage code and wrote new methods for simplifying the user edit codes
+- Various columns from the `users` table have been removed and the datatype of remaining columns has been updated to correct type.
+- Added laravel WebSockets
+- Laravel version is updated.
+
+For technical changelog see https://github.com/ladybirdweb/faveo-helpdesk-advance/blob/master/ChangeLogs.md#v400
+
+
+|====================================================
+|   v3.5.0
+|====================================================
+This release introduces updates in the LDAP plugin to support multiple AD import. It also updates the task plugin and adds functionality to import users from CSV files.
+
+### Updates
+- #### Multiple AD support Added
+Faveo LDAP plugin allowed importing users and login via LDAP used by your organization. While previously you could only import all users from single search base and LDAP directory this new update allows you to create multiple LDAP configurations to import and sync users from different directory service databases and with different filters in the same directory.
+![Screenshot 2020-08-03 at 3 14 31 PM](https://user-images.githubusercontent.com/10759797/89170531-66d46a00-d59d-11ea-8963-26013f3c6ba5.png)
+
+When you click on **Configure new LDAP** it will offer you with the same old settings page where you can define your LDAP connection configuration and other settings to filter users and import them to Faveo.
+
+- #### User import via CSV files
+    The system now allows importing users from CSV files. Admins can now upload CSV files containing user details and map each column with the user field in the system.
+![Screenshot 2020-08-03 at 3 04 30 PM](https://user-images.githubusercontent.com/10759797/89168669-d137db00-d59a-11ea-8339-7daf83fd44af.png)
+![Screenshot 2020-08-03 at 3 04 15 PM](https://user-images.githubusercontent.com/10759797/89168655-ced58100-d59a-11ea-9346-09dce522201b.png)
+Once you map CSV files columns with user fields properly, you can proceed to import the users. The system will import the users in the background.
+
+- #### Task plugin update
+    Task plugin has been updated to support reminder alerts and also fixes various known issues in the plugin.
+- #### Send feedback request from ticket timeline page
+    New option to request feedback from the client has been added to the ticket timeline page. It sends an email requesting overall experience feedback to clients on their tickets.
+
+- Added separate settings for date and time format to make date-time format consistent throughout the system.
+
+### Bug fixes
+- Typed content vanishes when switching between reply and internal note tabs
+- Profile picture with special characters does not upload
+- Removed language tab in case of department and help topic
+- Duplicate entries in the ticket filter dropdown
+- Internal note is not updating, when we fork a ticket
+- Custom JS route update issue fixed
+- various UI issues
+- Miscellaneous issues
+
+For technical changelog see https://github.com/ladybirdweb/faveo-helpdesk-advance/blob/master/ChangeLogs.md#v350
+
+|====================================================
+|   v3.4.2 and v3.4.3
+|====================================================
+Release to support SerivceDesk latest hotfix release.
+
+|====================================================
+|   v3.4.1
+|====================================================
+This release is a hot-fix release for the blocker issue in v3.4.0 which prevents the timeline from loading if the ticket is assigned to a team.
+
+### Bug Fixes
+- The timeline does not load if the ticket is assigned to a team.
+- UI corrections
+- Sidebar not updating counts
+- Installer checks updated
+- The issue in updating workflow
+- Tickets are not loading in user profile view pages
+- Dashboard freezing issue
+
+For technical changelog see https://github.com/ladybirdweb/faveo-helpdesk-advance/blob/master/ChangeLogs.md#v341
+
+|====================================================
+|   v3.4.0
+|====================================================
+This release focuses on improving and optimizing various modules in the system to make it faster, better, and more efficient. It also fixes a few bugs which are not critical for the functioning of your support system but 
+
+### Updates
+- **Dashboard UI updates**
+  Added new widgets and icons on the dashboard. Now you can see new widgets UI with icons in the dashboard.
+- **WhatsApp Plugin**
+  Added support for fetching and sending attachments from WhatsApp conversations. It allows the system to fetch and send attachments on the WhatsApp conversations when agents reply from the system.
+- **Facebook Plugin**
+  Added support for fetching and sending attachments from FB messenger conversations. It allows the system to fetch and send attachments on the WhatsApp conversations when agents reply from the system.
+- **Revamped Auto assignment**
+  Revamped auto-assignment module for handling auto assignments efficiently.
+- **Attachment support in the internal notes**
+  You can now add attachments in the internal note privately to share with your team members without notifying the client. Some users also reported internal note does not save formatted text with space and indentation, now it will.
+ - **V3 support added for all APIs**
+  Previously all core APIs of the system were compatible with v3. You could easily integrate the system using core APIs by simply adding `v3` in the prefix of the API. However, custom plugins and modules like management reports, ServiceDesk, etc were not accessible by v3. Now, these APIs are compatible with v3 and can be accessed in the same way.
+- **System Optimisation**
+  - Ticket creation process
+  - Indexed added in database
+  - Consecutive corn jobs for fetching mail
+  - Report and ticket list queries optimized
+  - Added caching for frequently used queries
+  - Middleware and route corrections
+
+### Bug fixes
+- **Tawk integration correction**
+      In the last release we introduced Tawk integration in our **Chat** plugin, however, there were some changes made at the Tawk side which impacted the integration resulting in the dysfunctioning of the plugin. Our team soon realized this and took the required action to fix the issue.
+- **Mail fetch breaking**
+  Some mail servers use some strings with quotations as the email addresses. While previously this results in breaking of fetching emails but now it's being handled correctly.
+- **Table UI issues in the mail templates**
+  While sending/fetching emails system was not respecting table styling. Extra blank spaces were either added or removed if the mail has tabular format data.
+- **Issues in the form builder API**
+  Form builder create/update API was creating duplicate fields in the form
+- **User profile pic**
+  Issues with profile pic and Gravatar loading for users profile.
+- Unable to edit agents from the user profile view page
+- **Business hour deletion issue**
+  Deleting business hours linked with the department results in failure of ticket creation for that department.
+- Miscellaneous UI issues
+- File upload issue
+- Signature image alignment issue fixed
+- Inbox UI
+- Attachments from Mac's mail application are missing 
+- SLA escalation mail template
+- SLA enforcement corrections
+- Management report
+- Fixed CC user not able to view tickets in the client panel
+
+### Changelog
+- Added API  for handling widgets
+- Removed URL crons
+- Queue snapshot job removed in a fresh installation
+- Disabled daily report job by default
+- v3 support added for modules and plugin APIs
+- Tawk javascript widget moved to plugin settings
+
+For technical changelog see https://github.com/ladybirdweb/faveo-helpdesk-advance/blob/master/ChangeLogs.md#v340
+
+|====================================================
+|   v3.3.0
+|====================================================
+
+Faveo Helpdesk v3.3.0 introduces the integration of the [tawk.to](https://www.tawk.to) chat application with the system. It also has improved UI for inbox and ticket details along with patches for various bugs.
+ 
+### Updates
+
+#### Improved UI of tickets inbox
+We have tweaked different elements of inbox and timeline UI to improve the aesthetics of the ticket list and timeline. Functionality remains the same.
+![new-timeline](https://user-images.githubusercontent.com/10759797/79744594-3e916a00-8324-11ea-9fcf-dc101eac1a2f.png)
+
+#### Tawk integration
+[tawk.to](https://www.tawk.to) is a Free chat application for websites. If you use Tawk on your website and would like to convert your conversations over the that as tickets in Faveo HelpDesk you can simply do it using the **Chat**
+plugin in Faveo. 
+Just configure your webhooks settings and your conversation will be converted and reflect as tickets in Faveo.
+![tawk-settings](https://user-images.githubusercontent.com/10759797/79744755-8ca66d80-8324-11ea-85a5-da9749f751fb.png)
+
+Once the integration is completed Tawk chat transcripts will reflect as tickets in the inbox
+![tawk-ticket](https://user-images.githubusercontent.com/10759797/79745029-076f8880-8325-11ea-87fc-7024c7360f12.png)
+
+#### My tickets and status option in client panel
+In the client panel now my ticket page will contain all the statuses visible to clients as a tab. Each status tab will show the tickets available in that status to clients.
+
+#### Dashboard refinements
+We had released a new beta version of the dashboard in the last release. We have worked on the feedback we have received and improved the dashboard to make it better and useful for our users. The dashboard has been updated to show more relevant data to the agents and admins.
+
+#### User directory
+Now user directory shows the organization column which shows the list of organization users belong. The user directory can be filtered by organizations. 
+
+### Bugs fixed
+- Issues in the Twitter plugin
+- Missing Business hours timezone if installed via CLI
+- Due date comes as null while forking tickets
+- Departments can only have up to 4 managers.
+- Organization view page breaks when provided with the wrong id in the URL.
+- Incoming and outgoing emails issues during fetching emails and sending emails.
+- Create ticket API request validation updated.
+- Reports do not update with new options after updating the system.
+- Queue page UI issue which prevents admin to define custom input to check executable PHP path.
+
+### Changes
+- Removed error notification emails sent if the exception occurs in the system as the same is now visible in the admin's dashboard.
+
+Head over to https://support.faveohelpdesk.com and explore our knowledge base to know more about the updates and features.
+
+For technical changelog see https://github.com/ladybirdweb/faveo-helpdesk-advance/blob/master/ChangeLogs.md#v330
+
+|====================================================
+|   v3.2.0
+|====================================================
+In Faveo Helpdesk v3.2.0 the team has squashed various outstanding bugs in the system and introduced multiple enhancements and improvements in the system. 
+
+## What new?
+
+### Dashboard Layout
+Faveo now has a new **Dashboard** which focuses on showing agents and admin the information which is relevant to them.  It contains sections like **Require Immediate Attention**, **Todo List**, **Recent Activities** which will help agents to address and efficiently manage the tickets. For department managers, it shows them the performance stats of their department and department members which will help them to make a quick decision for managing their department. See the below image which shows the overall layout of the new dashboard.
+![Dashboard](https://user-images.githubusercontent.com/10759797/77814798-7832d480-70da-11ea-99ec-6b61e59f6502.png)
+To know more details about the new dashboard head over to https://support.faveohelpdesk.com/show/dashboard-reports-and-the-functionality-
+
+### Tags in Knowledge Base
+Faveo now allows users to add tags in the KB articles. Linking tags with articles will allow users to find similar articles by creating an additional grouping of similar articles using tags.
+You can provide tags while creating or editing an article.
+![Screenshot 2020-03-28 at 10 06 51 AM](https://user-images.githubusercontent.com/10759797/77814937-bd0b3b00-70db-11ea-8c52-2d21bd49ba93.png)
+
+Oc=ne a tag is linked to an article it will be visible on the article in KB.
+![Screenshot 2020-03-28 at 10 08 19 AM](https://user-images.githubusercontent.com/10759797/77814948-d44a2880-70db-11ea-8185-3d1980b13063.png)
+
+If any user clicks on the tag in KB article it will show the filtered KB articles which are linked to that tag.
+![Screenshot 2020-03-28 at 10 07 49 AM](https://user-images.githubusercontent.com/10759797/77814960-f93e9b80-70db-11ea-811c-89081686948f.png)
+ 
+### Improved Logs
+System logs have been updated to show more information about the logged data or exception. UI has been updated to segregate filter options on the log level. Cron log has been improved to show the status of cron commands execution to simplify troubleshooting the issues with cron.
+![logs](https://user-images.githubusercontent.com/10759797/77815052-c21cba00-70dc-11ea-8b25-e53a015c97b8.png)
+
+### Twitter Plugin #Hashtag support
+The Twitter plugin now supports Hashtags. It will fetch the tweets containing the specified hashtags and create tickets in the system. You can provide multiple hashtags to fetch tickets on the plugin settings page.
+![hastag](https://user-images.githubusercontent.com/10759797/77815115-8d5d3280-70dd-11ea-9c82-412f9b3c9ce4.png)
+
+
+## Updates
+
+### Improved plugin settings page
+We have changed the UI of the plugin setting page to make it simple to de/activate the plugins.
+![plugin](https://user-images.githubusercontent.com/10759797/77815152-2724df80-70de-11ea-8293-1d082843b713.png)
+
+### Secured probe page
+Probe page has been secured with the passphrase for security reasons. Now once the system is installed you will need to enter the passphrase to access the probe page as it exposes information about PHP configuration on the server. The passphrase can be found in **.env** file.
+![Screenshot 2020-03-28 at 10 31 00 AM](https://user-images.githubusercontent.com/10759797/77815212-c8139a80-70de-11ea-9e1e-e9c0ffd39dba.png)
+
+### Change status dropdown list
+Change status drop-down list now will respect Allow override statutes and will show the results only which are commonly allowed for the selected ticket in case of multiple tickets are selected.
+
+### Improved installer
+Faveo GUI installer has been improved and simplified to make the installation experience simple and better.
+
+### Autoupdate refinements
+
+
+### Laravel v6.18.2
+The Laravel framework has been updated to v6.18.2. As Laravel 7 has been released the team will now focus on updating the framework version to 7.X.
+
+## Bug fixes
+v3.2.0 squashes various major and minor outstanding bugs and issues in the system. Here we are listing some important bugs which are squashed and probably make you happy to know that they no longer exist.
+* The organization logo not visible on the view page or not able to edit the organization due to the organization logo file is now fixed.
+* Made language file consistent to make the text on UI consistent.
+* Last login time of the user to show the correct login time
+* Telephony audio recording not working
+* Issues with email fetching and sending
+* Various UI bugs and minor bugs
+* Issues with approvers in Approval workflow and CAB
+* Fixed gravatar image
+* Issues with Laravel queue after updating now restating supervisor workers is not required
+* Refreshing CSRF token in the backend
+* KB search does not work on the words less than 5 characters
+* Issue in exporting reports
+
+## Deprecated/Removed
+
+### Deprecated old dashboard layout
+Though you can switch to the old dashboard layout we recommend you encourage your agents to use the new dashboard to make themselves familiar with it as the old dashboard will be removed completely in the upcoming releases.
+
+### Removed old inbox layout
+We have removed the old inbox layout from the system, now you can no longer switch to the old inbox layout.
+
+### Removed ban user
+Ban use functionality has been removed as it was not adding any value to the system and might be not being used by many of Faveo users.
+
+### Removed Close approval workflow
+Close approval workflow used to add an extra step of approval before an agent can close the ticket. If close approval workflow is enabled and the agent tries to close the ticket it used to send the ticket in the request for close status and notify the department manager about the action. The department manager then could approve or deny the closing request for the ticket. 
+As the same functionality now can be achieved using **Approval workflow** and **Listeners** we have removed the Close approval workflow.
+
+### Removed old social plugin
+As we have introduced separate new plugins for Facebook and Twitter we have removed the social plugin.
+
+For technical changelog see https://github.com/ladybirdweb/faveo-helpdesk-advance/blob/master/ChangeLogs.md#v320
+
+|====================================================
+|   v3.1.1
+|====================================================
+v3.1.1 provides fixes for various blocker issues.
+
+### Bug fixed
+- Last login activity capture
+- Priority displays the wrong name email settings
+- UI issues
+- Organization logo issue
+- Spelling correction for English words used in the system language
+- User creation with a duplicate username/email
+- Calendar plugin task list not working
+- Ticket thread content does not render correctly due to CKEditor and HTML purifier
+- Form group page not working
+
+For technical changelog see https://github.com/ladybirdweb/faveo-helpdesk-advance/blob/master/ChangeLogs.md#v311
+
+|====================================================
+|   v3.1.0
+|====================================================
+## What's new?
+
+### Organize your system's reports
+Continuing the improvements for the system reports our team has categorized the reports into a more meaningful structure. New reports page lists out all the important reports with their description allowing you to analyze the data which is important to your business.
+![Report_home](https://user-images.githubusercontent.com/10759797/75677819-4f254c80-5cb2-11ea-9189-fde7edb427b0.gif)
+
+#### Apply filter and save custom reports
+Now you can use the filters in the reports and crunch your report data to analyze the important data and make quick decisions to improve your customer support. And that's not all you can also save this generated report as a forked report for the future.
+![fork_report](https://user-images.githubusercontent.com/10759797/75678342-7597b780-5cb3-11ea-9d84-327092272a28.gif)
+
+
+### Improved Custom Form Builder 
+We have improved the custom form builder and made it more intuitive for better user experience so you can manage your forms better and your customers enjoy the flow of questions while filling the forms.
+- Manage all your forms from one place
+- Improved UI
+- Improved handling of nested fields and their child fields
+Head over to our knowledge base to find more details.
+![Screenshot 2020-03-02 at 6 49 51 PM](https://user-images.githubusercontent.com/10759797/75679774-433b8980-5cb6-11ea-8fa0-e539a45fd831.png)
+
+
+### WhatsApp integration
+Faveo has been integrated with WhatsApp using Twilio which adds one more channel in your HelpDesk system on which your customers can raise their issues in the system. If you are using WhatsApp Business account number then you can integrate that number in Faveo using WhatsApp plugin and convert your WhatsApp chats as the tickets in the system. Head over to our knowledge base to know more about this plugin.
+
+
+## Bugs fixed
+- Reopen ticket correction to show tickets which are actually reopened
+- Cron tasks do not run when multiple plugins with cron tasks are active
+- Backup issue
+- Issues with attachments on the tickets
+- PDF generation for ticket threads
+- Unable to auto-update when using PHP7.3
+- Unable to change the status of the tickets from the department/team view page
+- Unable to assign the tickets from the department/team view page
+- Telephone plugin miss call logging issue fixed
+- CKEditor does not work when CDN is on
+- Various UI and minor issues 
+
+For technical changelog see https://github.com/ladybirdweb/faveo-helpdesk-advance/blob/master/ChangeLogs.md#v310
+
+|====================================================
+|   v3.0.3
+|====================================================
+Be it major or minor nobody likes bugs in the system. v3.0.3 provides fixes for various bugs.
+
+### Updates
+- Added CC user details in mail log to help you identify system is sending which mail to which user
+- 2FA support for mobile APIs
+
+### Bugs Fixed
+- Various UI issues
+- Email settings and attachment issues during sending and fetching of emails
+- CLI installer issue
+
+For technical changelog see https://github.com/ladybirdweb/faveo-helpdesk-advance/blob/master/ChangeLogs.md#v303
+
+|====================================================
+|   v3.0.2
+|====================================================
+Bug fix patch
+
+Squashed few more bugs.
+
+For technical changelog see https://github.com/ladybirdweb/faveo-helpdesk-advance/blob/master/ChangeLogs.md#v302
+
+|====================================================
+|   v3.0.1
+|====================================================
+v3.0.1 provides hotfix patches for various issues found and reported in v3.0.0. It also fixes some PHP7.3 compatibility issues while fetching email and other UI issues.
+
+Bugs fixed
+- Remember me functionality does not work for 2FA enabled login accounts
+- SLA nondefault business hours calculation issue
+- Mail fetching issue in PHP7.3
+- Task plugin update not working 
+
+For technical changelog see https://github.com/ladybirdweb/faveo-helpdesk-advance/blob/master/ChangeLogs.md#v301
+
+|====================================================
+|   v3.0.0
+|====================================================
+Faveo Helpdesk v3 introduces various enhancements and improvements to make your support system better and more secure. In this release, we have improved the system on various aspects from security to performance and business logic implementation.
+
+## What's new?
+
+### Multi-factor authentication
+As our dependency on the internet is increasing day by day, we are becoming more comfortable yet more vulnerable on the internet. One of the major threats on the internet is getting the account hacked by attackers. This can be due to people use simple and same passwords for various online platforms.
+
+Multi-factor authentication was introduced as an added layer for securing the login process. In the process of log in the user must provide a private code with their username and password that can only be accessed by them over their phones.
+
+In Faveo we have introduced 2FA login which an individual can enable from his/her profile. Once the 2FA is enabled, whenever the users log in they have to provide a secret code that they can access on their phones using 2FA authentication apps like **Authy** or **Google authenticator**.
+
+#### 2FA setup process
+
+![ezgif com-optimize](https://user-images.githubusercontent.com/10759797/73061399-1ed2dd00-3ec0-11ea-8713-242f05f735fe.gif)
+
+#### 2FA login process
+![ezgif com-optimize (1)](https://user-images.githubusercontent.com/10759797/73061600-8b4ddc00-3ec0-11ea-8b06-d9302f6082aa.gif)
+
+### Projects in tasks plugin
+
+We also updated the task plugin and introduced **Projects** and **TaskLists** which can help you to manage your projects and related task from your helpdesk support system itself. We also changed the UI of the plugin to give it a similar look like other modules. New plugin now
+ - Allows to create and manage projects
+ - Allows to create task lists and link them with tasks and projects.
+ - Allows to create tasks
+
+### Add collaborators in client panel ticket view
+
+If your customers raise tickets and reply to the ticket using the client portal then they might want to add a new collaborator on the ticket while updating the ticket. Also if a user is a collaborator in another user's ticket then they might want to see or update it from the client portal which was not possible in the older versions. But in version 3 we have added this functionality to just give an additional option to your customers.
+- CC users of tickets can view tickets and reply to the ticket from the client panel.
+- Clients can add new CC users or remove CC users from client panel
+
+### Revamped SLA modules
+
+We have completely revamped the SLA module of the system from its looks to its working. SLA has been improved and optimized for helping you to manage your support system's SLAs. So you can increase your customer base by providing timely support to your customers.
+
+#### Improved SLA UI
+We have changed the functionality of the SLA and to make the options easy to understand in new SLA we have rearranged the options in SLA create/edit page.
+![SLA_edit](https://user-images.githubusercontent.com/10759797/73063975-1da4ae80-3ec6-11ea-8897-e8c40138c0e9.png)
+
+#### Improved SLA enforcements
+The old SLA enforcement process was hard to explain. If anyone asked us how and why this particular SLA has been enforced on the ticket it would take us hours which are directly proportional to the number of SLAs available in their system. This made us rethink the implementation of the SLA enforcement process and we did not waste any time to change the implementation of the SLA. We hope new SLA enforcements will be easy to understand so you can plan your SLA policies better and know why that particular SLA has been applied to the ticket. To see the new working process of SLA search our knowledge base for SLA.
+
+#### Improved SLA reminders
+As we have changed the SLA module completely, this includes the reminder and escalation alerts too. Now the system will not skip sending any notifications to you before the ticket gets overdue or no-one responses on the ticket.
+
+NOTE: Version 3 has remarkable updates so once you update the system to version 3 you can not downgrade it to an older version.
+
+For technical changelog see https://github.com/ladybirdweb/faveo-helpdesk-advance/blob/master/ChangeLogs.md
+
+|====================================================
+|   v2.3.0
+|====================================================
+At Faveo we always seek to provide our users with the latest updated tech and functionalities which are available in the market. Keeping our tech stack updated also helps us to serve our clients with an efficient and secure product. Faveo is based on the Laravel framework and uses various frameworks for frontend. We always try to keep our base framework updated to ensure we deliver all the latest updates and security patches.
+
+PHP has released PHP7.4, PHP7.3 is already being used to serve many web applications over the internet. Laravel has released version 6 which is the latest major version released by Laravel developers.
+
+In Faveo v2.3.0 we have updated the framework version to Laravel 6 also made the code compatible with PHP 7.3.  Along with updating frameworks we also improved some existing functionalities and fixed some bugs.
+
+## Enhancements
+### Implemented CKEditor 5
+The rich text editor is the core of Faveo. It allows agents to send a reply to clients, create useful articles and store predefined templates for a reply. All this is possible due to an interactive text editor provided by CKEditor. To further improve your typing experience we have updated our editors with CKEditor 5. It has a new design and it also lets you upload any image simply by copying and pasting it from your computer after all who does not like to ⌘+c and ⌘+v (ctlr+c and ctrl+v for windows)
+
+### Improved reports
+Past and next few releases of Faveo are about Reports because analyzing the HelpDesk data should be interesting and useful for management. v2.3.0 provides various updates in the reports which allow you to 
+- Define the format for you custom columns which contain date or timestamps
+- Select different chart layout for reports
+- View the data categorized in improved widgets
+
+### System backups
+System backup allows taking backup of the system including files and databases. Just tell the system to generate a backup for you and continue your day. The system will trigger you a mail when the backup is ready. No more SSH and writing scripts for generating backups.
+
+### PHP 7.3 support
+Faveo is now compatible with PHP 7.3, so go ahead and update your PHP version for good.
+
+## Bug Fix
+- EWS mail fetching and related issues
+- Agent performance redirection issue fixed
+- ServiceDesk plugin issues
+- Plugin schedule commands still visible when the plugin is disabled
+
+## Changelog
+- Updated Laravel version to v6.10.1.
+- Updated Bootstrap in client layout to v4.
+- Removed old vendor packages
+- License verification page implemented in Vue
+- Removed "Resolved" status as it does not serve any special purpose
+
+> NOTE: As bootstrap, resources have not been updated on our CDN servers users are requested to disable the CDN to serve resource files from their own servers until the next update. 
+
+|====================================================
+|   v2.2.7
+|====================================================
+This release reintroduces change requester and users deactivate functionality in the system. It also offers separate plugins for Facebook and Twitter channels to manage the plugins without hassle.
+
+### Updates
+#### Facebook Plugin
+The Facebook plugin allows admin to connect one Facebook app to Faveo using the app's API credentials. Once the app is connected with Faveo then admin can create their Facebook page(s) and integrate those pages with Faveo to read and respond on the page messages from Faveo. Messages from all linked Facebook pages will be fetched as tickets and reply made via Faveo ticket timeline will be sent as a reply on Facebook. The new plugin offers better UI to manage and link Facebook pages with Faveo and handles your Facebook conversation more accurately.
+
+#### Twitter Plugin
+Same as Facebook we introduced the new Twitter plugin to handle tweets and messages from twitter in a better way. The new plugin allows integrating one developer account app using which Faveo can fetch tweets or direct messages and allows agents to respond to them without logging into logging on Twitter.
+
+#### Helpdesk-In depth Report
+In order to improve reporting in Faveo, we have been rewriting our reporting module. This release provides the update for the Helpdesk-in depth report to serve more accurate data for your Helpdesk analysis report.
+
+####  User deactivation and change owner
+In past releases, we had removed the User deactivation option and change the requester button to stabilize the codebase. But due to the importance of these functionalities, we have reintroduced these functionalities again in the system.
+
+#### Bug fixes
+- Inline images are not being fetched
+- Corrected logic for a department manager in the approval workflow
+- secured 'API/agent/ticket-details' endpoint
+
+#### Changelog
+- CDN will be disabled by default in fresh installations
+- The system will show a mystery man icon from Gravatar if profile picture is not updated for an email in Gravatar.
+
+|====================================================
+|   v2.2.3
+|====================================================
+This release provides some important bugfix patches for some critical security vulnerabilities in the system. Other updates include improved performance reports and access system over IP.
+
+### Updates
+- Agent Panel KB view converted to Vue
+- Revamped Performance reports
+   - Improved data accuracy
+   - Improved UI with Vue components
+   - Agent performance report corrected
+   - Team/Department performance report corrected
+   - Export options for performance reports
+- Allowing system redirection to open system with IP
+- Updated telephony plugin for code cleaning and Vue conversion
+
+### Bug fixes
+- Security Vulnerabilities fixed
+- Edit profile page issue fixed
+- Fixed portal color seeder
+- Inbox popover UI issue fixed
+- Mobile app support updates
+- Duplicate Ticket number issue fixed
+- Other minor bugs and UI improvements
+
+### Changelog
+- Added support for MariaDB compatible version in GUI installer
+- Implemented database version check in CLI installer
+ 
+
+
+|====================================================
+|   v2.2.2
+|====================================================
+This release provides various improvements and bugfix patches for HelpDesk and ServiceDesk plugin.
+
+### Bug fixes and improvements
+- FCM key updates to support push notifications in new mobile apps for old web applications
+- Business hour calculation simplified
+- SLA enforcement issue fixed
+- EWS outgoing configuration issue fixed
+- User and Organization profile view converted into Vue components
+- Company settings page converted to Vue components
+- An improved top customer analysis report
+- Fixed SLA enforcement with Label/tags not working correctly
+- Recurring ticket execution time consideration issue fixed
+- Mobile notification improvements
+  * Support for multiple devices for single user added
+  * Logging out from a certain device will stop receiving notifications on that particular device.
+  > NOTE: Logout functionality required updating the mobile app
+- Cron URL for auto-close ticket throws an exception
+
+
+### Changelog
+- Navigation API is only accessible by logged in agents.
+- Bugsnag reporting disabled for `testing` environment
+- Removed deprecated and unused routes.
+
+|====================================================
+|   v2.2.1
+|====================================================
+This release focuses on provide backend API support for new mobile apps implemented using React Native. New apps are using v3 of API and required few new APIs which are added in this update. Along with it this release also provides few functional enhancements and improvements as listed below.
+
+### Enhancements
+- Added organization in ticket filters, now you can filter tickets view by organizations
+- Added response and resolution SLA met filter in ticket list pages
+- Order columns in the management report
+- Company settings view converted into Vue
+
+### Bug fixes
+- Ticket PDF generation issue
+- Handle token expiry on the page opened for a long time
+- UX improvements in installation database setup step
+- CDN setting gets updated after system update
+ 
+### Changelog
+- Added agent info permission
+- API to get active plugins
+- FCM Keys have been updated for new apps. 
+- Added PHP soap extension is the recommended extensions which is required while configuring exchange mail server via API
+
+NOTE: We will release new apps on the Play Store and App Store soon. Updating system to this system will not break old mobile app but the system will not send push notifications on old mobile apps as FCM configurations have been updated.
+
+
+|====================================================
+|   v2.2.0
+|====================================================
+### Bugs fixed
+- Marking email as read on mail server explicitly to fix mails not getting marked as read in Godaddy mails.
+- Fixed iOS inline attachments not visible in the thread.
+- Storage directory consistency issue fixed
+- Instant clicking multiple times on submit button
+- Issues in saved ticket filters
+- UI in the listener edit page
+- Picking Country ISO code based on user's GEO location
+- Missing words in language translations are not using the fallback translations.
+- Issues in the custom time range filters fixed.
+- User/Organization view converted into Vue.js
+
+### Changelog
+- Removed old change owner as the same can be achieved using the edit ticket option.
+- Bumped Laravel version to v5.8.35
+- Added support for attachments in ticket reply API for mobile apps
+- Made minimum PHP required version to v7.2
+- Made minimum MySql required version to v5.6
+
+|====================================================
+|   v2.1.9
+|====================================================
+Fixes dependency API strict-search parameter issue
+
+|====================================================
+|   v2.1.8
+|====================================================
+This release includes various improvements and new functionalities for Management report along with other Bug fixes.
+
+### Enhancements
+* #### Improved Management Report
+We crunched more data to show you more information efficiently in Management report. Added some new functionalities which will come in handy if you are someone who is looking to have more control over data. 
+  - Control columns you see in the report
+      Now you can dynamically select and remove the columns you see in the reports
+![control_your_report](https://user-images.githubusercontent.com/10759797/65049724-df313d00-d983-11e9-95d4-20ada042a1e3.gif)
+
+   - Add custom columns to show custom data
+     Now you can also add your custom column in the report which shows the data generated by your equation which you can write using different available shortcodes. We will calculate the result for you and display it in the reports.
+
+![ezgif com-optimize](https://user-images.githubusercontent.com/10759797/65051265-71d2db80-d986-11e9-93a1-eb0dea322c5e.gif)
+
+
+* #### Organization list Page in Vue
+   Organization list page converted in Vue with more clean UI.
+
+Old view
+![Screenshot 2019-09-17 at 6 17 18 PM](https://user-images.githubusercontent.com/10759797/65042977-a68b6680-d977-11e9-9d6f-f0f6f4a93ef8.png)
+
+New view
+![Screenshot 2019-09-17 at 6 08 19 PM](https://user-images.githubusercontent.com/10759797/65043006-bc009080-d977-11e9-87b5-68a3023826f7.png)
+
+
+### Bug Fixes
+* Password length validation removed from the login screen because sometimes users are using small passwords in AD
+* User ban issue
+* Redirection issue in the knowledge base
+* UI issues in the knowledge base
+* Client layout rendering issue
+* Whether your name is "Alberto Del Rio" or "Hijo de Sicodelico" you can save it in the system as the last name now allows blank spaces
+* Text limit increased for the body of workflow/listeners action emails
+* Custom attachment fields saving the incorrect value in the database
+* Allowed search by full name in the User directory
+* Security issues
+   - Ticket type deletion
+   - Ticket Status deletion
+   - Company logo deletion
+   - SLA Plan deletion
+
+### Change-log
+* Phone number is not unique for users, multiple users can share same phone number (Note: Mobile number is still unique)
+* Follow up functionality removed
+* Database option removed from file storage
+
+|====================================================
+|   v2.1.7
+|====================================================
+v2.1.7 provides patches for various functional bugs in the system. 
+
+### Bug fixed
+- White label plugin not removing `copyright`
+- Quickly switching between tickets and editing ticket in inbox using single click does not update the details of ticket in the edit form modal
+- Opening route `job-scheduler` without login in the system throws an error page
+- Auto closure updates tickets which are already in the target status
+- Improved UI of maintenance mode
+- Approval workflow not visible after updating to the last released version
+- Mail looping prevention for Exchange web server API
+- Improved logic for ticket Assignment via listeners/workflow
+- CC persons are receiving various duplicate mails which are not intended for CC 
+
+### Enhancements
+- Updated ticket page URL to passed filter fields and values in the URL itself.
+- Logout API added for passport token support to be used in API v3
+- Implemented FCM token update API in V3
+
+|====================================================
+|   v2.1.6
+|====================================================
+This update provides some additional functionality to existing features.
+
+### Feature updates
+* Mail fetching loop prevention
+* LDAP: Added department and organization managers to be pulled from AD
+* EWS: Added option for version configuration for exchange servers
+* Knowledge Base: Improved search algorithm to show the most relevant results while searching in KB.
+ 
+### Bugfixes
+* Cannot create bulk tickets when ticket form has an attachment field.
+* Cannot select the organization in the user form.
+* Know which listener/workflow enforced the approval workflow on the tickets
+* Job schedular issue
+* Fixed bugsnag issues
+* PHP compatibiltity issue in timeline page
+* Call recording audio tag not working
+* UI issues
+
+### Changelog
+* Username field made unique 
+
+|====================================================
+|   v2.1.5
+|====================================================
+This hot fix update fixes the issue in API responses
+
+### Bug fixes
+- Fixed API response for ticket create and edit endpoints in version 1
+- Distinct responses for API v1 and v3
+- TimeTrack encoded version issue fixes
+
+|====================================================
+|   v2.1.4
+|====================================================
+Added multiform and Exchange Web Server API support
+
+This release provides an update ticket forms which allows admin to create multiple forms groups and link them to ticket form. We also added API support for Exchange Servers webmail so you can use configure system mail using **Exchange Servers** option. Apart from this we also improved other functionalities and patched few bugs.
+
+### Enhancement
+- **Multiple forms**
+  - Allows to create form groups
+  - Link form group with department or help topic
+  - Drag form group to the ticket form
+  - Drag and drop functionality added to form options
+  - Option to set position for options in select fields
+- EWS API support added
+- Attachments in ticket forwarding
+- Option to remove applied workflow
+- CustomJs plugin updated
+- Updated probe.php for plugin installation instruction
+
+### Bug fixes
+- Ticket form fields are being saved without labels
+- Billing module client panel UI issues
+- Canned response inline image not loading
+- Sidebar takes time to load when ticket filters with custom fields are saved
+- Agent signature does not work in email templates
+- Security vulnerabilities
+  - Logout via image injection
+  - Tag deletion
+  - Notification
+- Unable to clear dummy data
+- Timezone not searchable in Business hours 
+- UI issues in IE browser
+- Recurring tickets of an agent are accessible in the admin panel
+- Status in filter option does not show all statuses
+- Showing the latest articles in KB
+- `To` is getting add as `CC` while replying on tickets
+- Added queue monitor to the sidebar navigation
+- Made email non-mandatory for registration
+- Assignment issue for agents via workflow and auto-assignment
+- Team assignment issue fixes
+- Toggle time track in the management report
+- Issues in the installation process
+- Made old ticket create and edit API (v1) working to make current mobile application working
+- Other UI issues
+
+
+### Change Log
+- Removed old code of Forms, old API and CRUD functionality will not work
+- Updated Loadash version
+- Typo fixed form template category `common-tmeplats` changed to `common-templates`
+- Changed logout request from `GET` to `POST`
+- jQuery version updated
+- Removed gender column from the user table
+- Marked unused routed as deprecated in routes.php
+- Laravel version updated to v5.8.28
+- Changed Rating mail and LimeSurvey mail sending mechanism to use unified core class
+
+|====================================================
+|   v2.1.3
+|====================================================
+Hot fix patch
+
+### Bug fixes
+- Updated bundle for fixing UI issues
+- Handled error during database update during auto update
+
+|====================================================
+|   v2.1.2
+|====================================================
+v2.1.2 updates various modules in the system and provides patches for miscellaneous issues in the system.
+
+### Enhancements and updates
+- Recurring tickets data table is converted into Vue
+- Added Laravel passport support for v2 API
+- Added billing package field in the new ticket creation form
+- Revamped client panel Vue components
+  - Slight changes in Client panel UI
+  - Changed billing packages UI
+  - Removed dead code from backend and frontend of client panel
+  - Reintroduced "Have a ticket" in client panel to check ticket without login
+- Updated Webpack version
+- Updated Bootstrap version
+- Updated Jest version
+- Converted canned response CRUD in Vue
+- updated login API for passport support
+- Made session lifetime as 10 years by default
+
+
+### Bugfixes
+- Edit Ticket modal popup issue
+- Allowed Russian characters in agent first and last name
+- Client panel does not render when system language is Dutch or Portuguese
+- Fixed emails setting case sensitivity allowed the creation of a user with system email
+- Fixed various routes and related issues
+- Fixed agent users are not able to edit their profile if they don't have permission to update user profile
+- Fixed logging of Redis connection issue via `horizon: snapshot` even if the system is not using Redis as queue driver
+- New password provided during reset password does not work with special characters
+- Mail autoresponder mail header case sensitivity fix
+- Check LDAP support in PHP is enabled or not while configuring LDAP settings
+- Assignment correction for assigning tickets either to a team or an agent.
+- Removed internet access check for CDN/non CDN setting as it makes the system slow.
+- Prevented changing the purpose of the status of default statuses
+- Fixed issues with merged tickets
+
+#### Security issues
+- Blocked access of non-public directories
+- Language package deletion vulnerability
+- changed location of temporary storage of mail attachments
+- Plugin deletion vulnerability
+- Template set deletion vulnerability
+- Auto-update API changed
+- Changed ticket status change API to post
+
+|====================================================
+|   v2.1.1
+|====================================================
+Fixes external API issue which was causing mobile Apps,
+not to work plus other minor issues which were reported after v2.1.0.
+
+|====================================================
+|   v2.0.2
+|====================================================
+v2.0.2 provides fixes for various functional bugs in the system.
+
+### Updates
+- Added support for LDAP filters
+- Updated Faveo Probe checks
+- Added tracked time in management reports
+- Added organization department managers for approval mails
+
+### Bug fixes
+
+- Reports table UI issue
+- Russia's phone ISO code corrected
+- Form field option order issue fix
+- Ticket form help-topic and department label not updating
+- After denying approval tickets are not opening
+- Rating emails not working
+- Other UI issues
+- Fixed issue in the approval workflow
+- Fixed license error messages
+
+
+|====================================================
+|   v2.0.1
+|====================================================
+Feature updates
+
+V2.0.1 enhances and provides updates for various features of the system.
+
+## New features
+### Ticket Forwarding
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The system now allows agents to forward the complete ticket thread via emails. Agents can enter single/multiple email addresses to forward the ticket. It will be useful in cases when you want to share the thread with the third party members without enforcing them to be a part of the ticket.
+
+### Ticket creator field
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New creator field has been added which shows who created the ticket. Most of the time when agents create a ticket for a client system shows the client as a requester of the ticket but there was no information about which agent created the ticket or the client created the ticket themselves. The creator field will solve this issue and tell the actual creator of the ticket.
+
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Filters in inbox and management report also allow filtering the data based on this new field.
+
+   ### Email templates for the department
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faveo uses predefined mail templates for sending email alerts and notifications to users via emails. These templates are editable and can be replicated for creating templates for different languages. So that the users receive emails in their preferred language.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We have added the functionality to link template sets with a department which will be used to send notifications emails when any activity happens on the ticket of the department linked to that particular template set.
+
+The previous precedence for the template picked by the system was as shown below
+> User's preferred language template set **>** system's language template set **>** default template set
+
+Current update will change template picking preference as below
+>User's preferred language and department template set **>** User's preferred language template set **>** system's language and department template set **>** system's language template set **>** default template set
+
+   ### Lanugage Migration Plugin(for internal usage)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An internal plugin to generate language keys with missing translation for a given language which can be later given to translators for translation.
+
+## Updates
+### Recurring tickets
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Recurring ticket allows admin to define a ticket which will be created periodically in certain intervals. While previously this feature can only be used by admin, now agents will also be able to create recurring tickets in the system. However, they will only be able to access their own recurring ticket and will not be able to update system recurring tickets(created by admins) or other agent's recurring tickets. Apart from this, there are a few more updates which are listed below
+- Improved data table for showing available recurring tickets.
+- Give a name to your recurring event so it will be easy to recognize and edit them later.
+- Define execution time for a recurring event. Which means if you want a recurring ticket to be created daily at 2:30 PM now you can set the time for the execution for the recurring event and system will create the ticket at 2:30 PM irrespective of the execution time of recurring cron;
+
+### SLA
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SLA updated for simplifying and centralized backend code
+### Approval Workflow
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Added approval removal functionality and option to select organization managers as approver of levels and approval workflows.
+### Listeners
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Added option to apply approval workflow in listeners actions.
+
+### Bug Fixes
+* Updated email validation
+* Ticket preview issue fixed
+* Inbox type filter issue fixed
+* Datatable UI issue fixed
+* Tickets table page number issue fixed
+* Ckeditor spellcheck option updated
+* Bugs in the approval workflow
+* Removed ticket number from the subject while merging the ticket
+
+|====================================================
+|   v2.0.0
+|====================================================
+Vue is a new view
+
+Since Vue is rising its popularity among frontend and full-stack developers, we have started rewriting the code which renders on the client side using Vue for various reasons.
+
+First and foremost it has better compatibility with the Laravel framework which is the core of our application. It also allows us to rewrite small parts of the application, convert them into Vue and release without affecting the whole application or rewriting complete frontend code which may take an eternity.
+
+Version 2.0.0 is our next step towards converting the application into Vue. It converts various parts of the application into Vue integrated modules. Which means we had to make various changes in backend and frontend code. These updates modify the code of some core functions of the application thus the release is tagged as v2.0.0. Although, we tried to make these updates backward compatible with the older version there are few functions and APIs which are not backward compatible after all good things come with some price.
+
+## Changelog
+
+#### Form builder
+- All tickets, user, and organizations form builders have been converted to Vue with changes in backend logic to save these customized forms in the database.
+- API to get these forms to render and submit have been updated.
+
+#### Forms rendering
+- All customized forms of tickets, users and organizations will be rendered as Vue components in agent/admin/client panel.
+- Ticket recur, fork and edit form also uses Vue components.
+
+#### Workflows and Listeners
+- Workflows and Listeners CRUD has been rewritten with Vue components.
+- Workflow enforcements have been updated. Now instead of enforcing the first workflow system will enforce all matching workflows and the final result will contain the last updated values  enforced by last workflow (same goes for listeners)
+
+## How will it impact?
+
+**System** :
+- We've refactored and cleaned unnecessarily complex code system will be able to process the request for ticket creation, reply on tickets, etc faster and efficiently.
+- All the system related functionalities such as fetching emails, sending notifications, etc will continue to work without interruption.
+- As workflow and listeners have few updates in their working it will affect old workflow and listeners in the system.
+
+**Admin/Agents** :
+- Admin/Agents will be able to use the system the same as before, the only difference is with the pages which render in the browser will be Vue compiled components.
+
+- Admin/Agents can now view the custom data of the ticket in the single click.
+
+- Admin/Agents can now edit tickets in a single click without opening a separate ticket detail page which opens in a double click on the tickets names.
+
+- As workflow and listeners work slightly different now so Admin might need to recreate their workflows and listeners.
+
+- In some cases, the admin may require to recreate the forms in the system.
+
+**End User** :
+- As client panel had already been converted to Vue in the previous version clients will be interacting with the Helpdesk system the same as before.
+
+- Registration page and create ticket page were in Angular js and needed to load a new page previously. Now they have been converted to Vue and will open without redirection or page reload.
+
+**Developers** :
+* Since Vue is an easy to learn open source framework with a fairly active community frontend developers can now write components which can be reused in the application by other developers.
+* Form builder component is much better than the one written in Angular which gave nightmares to almost everybody who tried to get their hands dirty by editing it.
+* Clean backend code with less complexity will help new developers to read and understand the existing code and modify or write new methods without breaking existing functionality.
+
+> Note: All new fixes and enhancements hereafter will be implemented in the updated codebase. The updates will be made available to clients after ensuring the smooth transition of their system from the older versions to v2.0.0 or greater.
+
+|====================================================
+|   v1.9.55
+|====================================================
+### Hot fix patch
+
+This release provides fixes for few bugs which are listed below
+* Reply box rendering issue
+* Ticket title alignment issue
+* PHP7.3 installation issue
+* Correction for ticket collaborator
+* Fixed meta title and description for making Helpdesk Portal SEO friendly
+
+|====================================================
+|   v1.9.54
+|====================================================
+
+v1.9.54 introduces some new features along with the enhancements in existing features and bug fixes.
+
+## Features and Enhancements
+  * ### Billing module updates
+     Billing module is updated to allow the creation of support packages. This support packages can be used by customers to raise the tickets in your Helpdesk system. Admin can choose whether the support package is required for creating tickets or not.
+     #### What's new?
+     * Create/update paid or free support packages
+     * Define the number of ticket credits which can be created using the package.
+     * Define the validity of packages.
+     * Package list page for customers to view and select support packages available in the system.
+     * Customers can purchase support packages from Helpdesk system.
+     * Offline and online payment methods available for purchasing packages.
+     * Clients can see all their orders and invoice history.
+     * Enable/disable package requirement for ticket creation.
+     * Invoice history page for admins and agents with filter options.
+     * Agents can manually add payments in the invoice to process the order.
+     * Agents can create invoices for users.
+     * Send invoices to users via mail.
+     * Alerts for new orders and order confirmations.
+     * Credits will be deducted from user's order when the raise tickets using package.
+
+  * ### Dynamic navigation sidebar
+     We are constantly updating the system to make it more simple and user-friendly for our users so that they do not have to break their head and focus on what is important for them which is provide easy and fast support to their customers. Plus we also want to build the community of developers who can innovate and integrate their work in Faveo. Dynamic navigation implementation helps us to achieve both.
+     Now users can easily navigate to different pages like inbox, knowledge base etc browsing from the sidebar all. Developers can use Navigation helper classes to add their pages in the sidebar navigation list.
+
+  * ### Autoupdate
+    Although this feature had been introduced in the previous versions, we could not make it reliable and easy for users to update their system using this feature. After updating our billing system recently we have made changes on how we handle licensing for different editions of Faveo.
+    We want to make the experience of the users to update their system simple and precise so they do not have to wait for updating their system whenever a new update is released. In order to achieve this, we have reworked on the auto-update module and users will be able to update their system using this feature in the near future.
+
+  * ### Reply to and collaborator updates
+    Reply on thread functionality is updated so the users who are making a reply on the thread can choose to whom they want to forward the thread.
+
+## Bug fixes
+  * Cron page does not open while the open_basedir restriction is enabled to run PHP scripts in safe mode.
+  * Langauge translation does not use fallback words when the translation is not available in the user's preferred language.
+  * Handling exception response status in the frontend.
+  * Template shortcode invocation method updated.
+  * Added ratings in single click view of tickets.
+  * Added email address of users to filter tickets list using email.
+  * fixed PHP7.2 compatibility issue for listeners.
+  * Fixed due date not updating when listeners have status change action.
+  * Department/Agent/Team performance report shows different data on load and after sorting.
+  * Title missing in management report for random tickets.
+  * Other UI bugs.
+
+|====================================================
+|   v1.9.53
+|====================================================
+
+In the last release as we introduced two separate language packs for Eglish UK and US system started showing the key instead of actual translation for different plugins and modules. This patch fixes the issue and provides updates for some other bugs.
+
+|====================================================
+|   v1.9.52
+|====================================================
+Bug Fixes
+
+Fixed manual activation of the user account by agents. The issue was only happening when the agent user was trying to activate user accounts from the user profile view page.
+
+|====================================================
+|   v1.9.51
+|====================================================
+
+This release contains the patches for various logical bugs in the system for different functionalities. It also introduces some new features like **Close waiting time** and **Approvals via workflow**.
+
+### Features
+
+- #### Close waiting time
+  Many a times client may reply on the old ticket which they have created before a month or a long time ago. There are possibilities that the client replied on the old ticket for a completely new query after the old issue is resolved. This will make it difficult for system users like agent and admins to track the issues raised by the client for different problems as they are replying on the same old thread.
+Some companies also want to restrict users response on the closed tickets after a certain time period. Close waiting time allows admin to define a time period till which a client can reply on an old ticket and reopen the same ticket. If the client replied on the old ticket after a defined closed waiting time system will automatically redirect the request to a new ticket and create a new ticket for it.
+
+- #### Approvals via Workflow
+Faveo has approvals module which allows defining various approvals on different levels to accommodate the different process of an organization and its department. While in the previous versions agents had to manually apply for the approvals on tickets; now admin can define a workflow which will check for certain conditions to be true in the tickets and then enforce an approval on the ticket. If they match the criteria system will apply for the selected approval on that ticket.
+
+### Bug fixes
+- Login page redirection issue in blade files.
+- Autoclose module working issue.
+- Unable to change default SLA of the system.
+- Mobile number validation issue in user view
+- CC user duplication issue
+- Language images not loading in client panel.
+- Email fetch creating duplicate tickets issue.
+- Arabic characters missing in the ticket fetched from outlook/office365.
+- CLI installer removed order key check.
+
+
+|====================================================
+|   v1.9.50
+|====================================================
+This release enhances system logs with advanced options to help users or system admin to analyze and troubleshoot any issue occurring in the production environment. It also adds Laravel Horizon which is Laravel's queue monitoring tool which provides a beautiful dashboard to monitor system's background jobs processed in the queue.
+
+### New System Logs
+
+New and advanced System logs provide an organized and beautiful view which provides comprehensive yet easy to understand logs. These logs will be helpful for users/system admins or even Faveo team to analyze what's going in the system and will make it faster to identify and troubleshoot the issues.
+
+  System logs are categorized as below
+
+    Exception logs: All error and exception related logs will be logged here, so when system behaves abnormally you might want to check these logs for finding out the problem or cause of the problem.
+
+    Cron Logs: Faveo has various iterative commands and tasks which it runs using crontab or task schedulers. Next time when the system stops fetching emails or creating recurring tickets these logs may save a few minutes or hours to fix the issue.
+
+    Email logs: Faveo sends and receives emails via system configured mails. These logs will provide complete insight into the email functionality of the system. It will help the user to understand which emails have been fetched in the system, what notifications or alerts emails have been sent out and to whom. All this information will be handy to track system's interaction with the mail server and related activities.
+
+  How to access
+
+  Go to admin panel >System Logs and debugging>System logs
+
+### Laravel Horizon
+
+Faveo uses Queue functionality to process time-consuming or bulk jobs in the background such as sending emails for various user actions like ticket submission or forget password etc. It helps the system to send a quick response to the client to improve their experience on Helpdesk portal. Nobody likes slow or unresponsive webpages when the server is processing their request and doing other various jobs simultaneously. Laravel makes it easy to handle these jobs and push them in a queue so they can be processed in the background.
+Laravel Horizon is an open source tool which provides a beautiful dashboard to monitor and manage all jobs which are pushed in the queue. It shows real-time information of the jobs which are being pushed in the queue or being processed or failed while processing. It also provides throughput metrics with information like thee the number of pushed jobs, failed jobs, max runtime of a job etc. It also allows retrying processing of failed jobs.
+
+  How to access
+
+  Go to admin panel >System Logs and debugging>Queue Monitor
+
+### Bug fixes
+
+  * Email template issue fix when agent create the ticket for himself/author-agent then that agent does not receive ticket creation acknowledgment mail
+  * System does not pick system default language's template set to send the email notification to users when system default language is not English.
+  * Department-status link working in ticket timeline page on double click.
+  * Report data getting distorted when exporting management reports.
+  * 2019 option to add media modal popup in recurring tickets.
+  * database: sync command issue for updating database
+  * Handled 404 exception due to calling the URL which does exist in the system using the POST method.
+  * LDAP search base allows more than 10 entities.
+  * Various UI issues
+
+|====================================================
+|   v1.9.49
+|====================================================
+Hot fix patch
+
+This release provides fixes for some critical issues in the system.
+
+## Bug Fixed
+
+### 2019 Missing?
+In add media modal popup's year drop-down list does not show 2019, which makes it difficult to filter out the files which are uploaded in 2019.
+
+### Rating templates shortcodes
+Updated system to be able to use more shortcodes in ticket rating and rating confirmation emails to pass more details of tickets such as ticket number, ticket subject etc. in the email.
+
+### Debugbar visibility
+In recent updates, the system was not showing debug bar when APP_DEBUG mode is enabled. Also in logs system was logging `production.ERROR: Debugbar exception: Route [debugbar.assets.css] not defined` when running the application. We have made changes in web.php (commit id #db7c7d7fd2f45587e5eb4233d74cad4c8ca45ef0) to fix the issue https://github.com/barryvdh/laravel-debugbar/issues/387 as per this solution
+https://github.com/barryvdh/laravel-debugbar/issues/387#issuecomment-137487228. As the package has been updated we no longer need this code snippet in web.php and it solves the issue of visibility of debugging bar and error logging.
+
+|====================================================
+|   v1.9.48
+|====================================================
+This release focuses on new features to improve existing functionalities of the system. It introduces CDN enable disable option, report download page and other options which makes the existing functionalities more useful for the users. It also updates the Laravel version to the latest released version of the framework.
+
+## Change Log
+
+### Enhancements
+- #### CDN enable/disable option
+  Content Delivery Networks widely known as CDN have geographically distributed servers which respond to the requests based on location allowing faster delivery of the resources like images, stylesheets and javascript files. We started hosting resource files of Faveo on our CDN servers allowing your application to handle and respond to the resource requests faster through the nearest server.
+
+  If the user doesn't wish to use resources hosted on CDNs then they can disable the CDN option from the system settings page. It will force the system to handle resource requests and deliver resource files from the same server where the application is hosted. It can be useful if the system is being used in intra network and client machines are not allowed to access resources over the internet.
+
+- #### Report Export download page
+  Did not receive the mail after exporting a report from Management reports?
+  We have added a new page where you can see and download all your exported reports. Now even if you miss the mail you can still download the report you exported to analyze your system working.
+
+- #### Failure of jobs
+  Though we try to ensure that Faveo handles all jobs processed by users without failure. But we have limitations as Faveo is a self-hosted application and most of the times we are not controlling the system which is hosted on user's server. We have added an option in alert and notices which can be used to notify agents/admins about the errors and exceptions occurred in the system. The feature is in early stage and currently it only handles failures occurred during processing of background jobs like exporting reports, creating recur tickets etc.
+
+- #### LDAP package update
+  Updated ADLDAP package used in LDAP plugin
+
+- #### Select status which allows auto-closing the ticket
+  Faveo has auto-close ticket workflow which closed the tickets automatically after a defined period if the agent had replied on it and there is no response from the client. Previously if you enabled this workflow system would close all the ticket which has last response from agents after a defined period. Which can be troublesome if you are waiting for a response from a 3rd party as the system will close the ticket irrespective of the status.
+
+  New settings in close ticket workflow setting will allow admins to select the list of statuses which allow the system to close tickets automatically. While executing the auto-close process system will check the ticket's status against the list of selected statuses. If the ticket's status matches with any of the statuses from the list then the system will check old conditions to close the ticket and if all conditions satisfy then the system will close the ticket automatically.
+
+- #### Billing updates
+  Updated Faveo billing and licensing validation checks to prevent unauthentic usage of the application on client servers without knowledge of Faveo team.
+
+- #### Laravel upgrade
+Upgraded Laraved version to 5.7
+
+### Bug Fixes
+- Fix redirection issue.
+- Ticket body jumbled up
+- Cron settings page required field issue
+- IE compatibility issue on creating ticket page introduced in the last release
+- Updated billing verification link
+- Fixed title issue while merging tickets
+
+
+|====================================================
+|   v1.9.47
+|====================================================
+LDAP updates and bug fixes
+
+### Enhancements
+- LDAP enhancments
+    * Added new options in LDAP settings.
+    * Support for OPEN LDAP and Free IPA
+    * Dynamic username attribute with suffix/prefix
+    * Add custom user attributes in Faveo database
+    * Import user role from LDAP server
+    * Support for DN login
+- Canned response enhancements
+    * Option to add inline attachments and attachments in canned responses which can be used while reply on tickets
+- Edit custom fields of Help topic and departments
+- Authenticate API response updates
+
+### Bug fixes
+- Time track page issue fixed
+- Calendar plugin issue fix
+- Agent timezone issue fix
+- Organization issue fix
+- Authenticate API response updates
+- Recur tickt inline image issue
+- Canned reponse PHP7.2 compatiblity issue
+
+|====================================================
+|   v1.9.46
+|====================================================
+Last release v1.9.45 had some issue in ticket timeline page due to which javascript was broken on that page and resulting in breaking functionalities on that page. This release targets those issue and provides a patch to fix them.
+
+### Bug fixed
+- Timeline page issues
+- Forgot password page does not show alert
+- Client panel Vue implemented white labeling
+- Envato plugin
+- User directory and breadcrumbs not rendering `&nbsp;` and showing it as text
+- Updated rating mails template to make them work in the different mail client.
+
+|====================================================
+|   v1.9.45
+|====================================================
+
+### Bug fixes and updates
+
+* **Updated installer:** Updated installer to open probe.php files in the first step to check server environment as laravel route does not load up when system permissions are not correct giving no information about the issue. So putting the system check in simple PHP script will allow the system to check server configuration before giving control to Laravel.
+* **Email verification screen is back:** When a user who has not activated his/her account logs into the system, he will be notified to activate the account using the link they received in their mailbox. They are also presented with the option to resend the activation link or update their email before activating the account.
+* **Daily report mails issue** Due to the last update in cron settings daily report emails were not going out, which we have fixed in this update.
+* **Envato Plugin refinements:** Updated Envato plugin to fix the issues in the plugin
+* **LDAP updates:** Added custom port option to connect with LDAP plugin.
+* **Fixed client layout** Client layout renders in default theme even after changing the layout colours.
+* **Merged template for registration and activation:** In alerts settings now user can select whether they want to send different emails to newly registered users for **registration confirmation** and **account activation** or just a single mail with the merged template.
+* **Duplicate ticket numbers issue:** While processing recurring ticket creation jobs system was assigning same ticket numbers to multiple tickets. This patch update will fix the issue by dispatching the recur ticket create jobs on a separate queue. Please note to fix the issue the supervisor configuration needs to be updated.
+* **Management report export issue:** Fixed management report issue by updating the export job process and dispatching the job on a separate queue. Please note to fix the issue the supervisor configuration needs to be updated.
+* Other UI updates
+
+
+|====================================================
+|   v1.9.44
+|====================================================
+This release introduces some major updates and features in the system. It updates the Laravel framework to v5.6.39 along with some new features and functionalities in some existing modules.
+
+### Enhancements
+  - **Approval workflow module(new)**
+    Approval workflow introduces new functionality in the system which allows you to create multiple workflows with multiple levels. You can decide who will approve each level and for each level, you can choose to get approval from multiple people with approval required from all or any of them. Once you have created your workflows with different levels, you can later apply these workflows on the tickets from ticket detail page. When any workflow is applied on a ticket, all approver of level 1 will receive an email to approve or deny the requested ticket and that particular ticket will become unapproved and only privileged agents will be able to perform selected actions on it. Approvers can use the unique link they received in the mail to approve or deny the request without login to the application. Which makes it easy to get approval from the person who does not have an account in the system. If level 1 gets approved then the subsequent level will be enforced and approvers of that level will be notified and it will continue till all the levels defined in the workflow are passed and approved.
+
+  - **Refinements in Language Module**
+     * Rewritten methods in LanguageController
+     * Updated LanguageMiddleware
+  - **LDAP plugin updated with advanced options**
+    * Now admin can map attributes from their AD to Faveo database's user table columns. It will allow you to define which column should be imported from your AD and in which column of users table the value should be saved.
+  - **Refinements in Cron module**
+    * Updated Console/Kernal class responsible for running scheduled artisan commands. Added helper methods for developers so they can handle and schedule their custom artisan commands for the custom module and package from itself.
+    * Updated cron settings to let the user select to enable/disable all system's default and plugin's scheduled jobs.
+    * Fixed "Daily at" field value to take time in user's system timezone by handling UTC conversion and expected timely execution on severing from the backend.
+  - **SLA response flag**
+    If the ticket is in halted SLA and response happens on the system by agent then system was not able to set a correct flag for response due. Now while halting SLA system stores the last estimated due date and uses it to set a flag for response due. If the ticket is in Halted SLA and response is done within last estimated due date then the response will be marked on time as true; false otherwise.
+  - **Ticket creation with organization**
+   As Favoe currently does not have direct linking between tickets and organization we have restricted linking of organization and tickets of users with the role as normal users. Which means you will not be able to create a ticket for internal users(agents/admins) and then link them to an organization.
+  - Laravel framework version updated to v5.6.39
+  - Updated SLA create/edit page UI
+  - Updated Business hours create/edit page UI implemented in Vue.js
+  - Option to update session lifetime of the application
+  - Updated API and added APIs client mobile apps
+  - Optimized Exception handler class
+
+### Bug fixes
+  - Default help topic issue in ticket creation
+  - Datatable UI fixed
+  - PHP7.2 compatibility issues in various pages
+  - Template deletion issue
+  - Fix my ticket issue
+  - Alert message UI spacing issue
+  - Fixed deactivate users and organization UI issues
+  - Fixed ITIL issues
+  - Frontend and UI issues in ticket filter save
+  - Add media model popup shows the relative path of files instead of URL
+  - Management reports bugs
+
+
+|====================================================
+|   v1.9.43
+|====================================================
+Billing link updated
+
+Due to changes in our billing domain, users were facing problem in the installation while verifying the serail key and order number for their Faveo purchased copy. This release fixes the issue by updating the correct link for billing.
+
+
+|====================================================
+|   v1.9.42
+|====================================================
+Faveo v1.9.42 adds a new functionality in the inbox page which allows you to save the filter's criteria for filtering the data in inbox page. Saving filters will allow you to create a filter list with different crietiea and you can use these filters anytime to filter the data in the ticket table.
+
+- Create and update multiple filters with multiple criteria.
+- Share the filters with your department members or specific agents.
+- Use "Remember my choice" for loading the system with the selected filter every time you open the application.
+- KB articles and comment enhancements
+
+#### Bug fixes
+- Fixed SQL constraint issue for deleting the ticket from the database using `Delete forever` option in the trash
+- Fixed Due date calculation issue for SLA halted period in nonworking hours
+- Fixed email setup issue for exchange servers
+- Fixed inline attachment issues in emails
+- Fixed default help topic invoke issue in ticket creation
+- Fixed apostrophe issue in ticket reply emails
+- Fixed duplicate notification for user creation while updating the user profile
+- Fixed organization document plugin issue
+
+|====================================================
+|   v1.9.41
+|====================================================
+### Bug fix patches
+
+  - Fixed Kerbose issue while setting up email using exchange server
+  - Fixed Knowledgebase issue
+  - Fixed Organization rendering issue in inbox and ticket pages
+  - Fixed Redirect URL issue
+  - Fixed redirect issue for login from register/ticket create page
+
+|====================================================
+|   v1.9.40
+|====================================================
+### New inbox timeline enhancement
+  This release add a minor enhancement in new ticket timeline page which provides the functionality of allows override status which is avaiable in main ticket detail page. Using *Allowed status override* funtionality allows admin to select what status can be updated on the ticket with certain statuses. For example if an agent is seeing ticket with open status then admin can select the status which agent can update on that ticket. The agent will only be able to see and select only those statuses.
+
+|====================================================
+|   v1.9.39
+|====================================================
+### LDAP Plugin updates and Bug fixes
+
+Faveo Helpdesk v1.9.39 provides enhancements in LDAP plugin to allow admin to import users from various directories using different search base queries. It also provides patch updates for some bugs.
+
+#### LDAP enhancements
+  - Implemented LDAP plugin in VUE.js, in continuous efforts to make the application modular.
+  - New settings allow you to define multiple search bases and map imported users to a different role such as agent/admin or user.
+  - Ping LDAP server to check the search base directory before importing users from LDAP to FAVEO
+  - LDAP sync cron to import updates in the user directory and update details of users in Faveo database
+
+#### Bug Fixes
+  - Optimized management report export job to export large data
+  - Allowed report filtration on ticket's last update time
+  - Fixed issues in Recurring Ticket module
+  - Fixed status visibility in check ticket page without login
+  - Fixed IE not able to reply on tickets in agent panel
+  - Fixed issues for PHP 7.2 compatibility
+  - Ticket form XSS vulnerability fix
+  - Optimized Vue web packs
+  - Other UI fixes and enhancements
+
+|====================================================
+|   v1.9.38
+|====================================================
+Bug fix Patch
+
+  - Fixed Agent access issue for time track routes
+  - Fixed dashboard info box icons issue
+  - Fixed content removal on successful reply in Firefox
+
+|====================================================
+|   v1.9.37
+|====================================================
+Faveo v1.9.37 introduces some additional options to customize your ticket inbox view and also provides a feature to track time spent on a ticket which can be useful if you provide paid support to your customers.
+
+### Enhancements and features
+- **Customize inbox view**
+  Now you can select some extra details to be shown in the ticket tables, which can easily be configured from ticket settings page. It also gives you an option to add custom fields to add in ticket table view if you have customized ticket form and want to see them in your inbox page.
+
+- **Time tracker**
+  As we are reworking on billing module time tracking can be considered as a submodule of billing module. Time tracker allows agents to record time spent on a ticket in hours and minutes. Time tracker module can be enabled from modules under settings page from admin panel. Tracking of time can be done on either ticket level or each reply/thread level.
+
+### Bug fixes
+- Report added functionality to filter by updated at date.
+- SLA due date calculation issue. When there is a delay in updating updated at column system counts due date based on first response even if a first response has been done on tickets.
+- SLA page UI changes
+- UI bugs and other minor bugs
+
+|====================================================
+|   v1.9.36
+|====================================================
+Bug Fix Patch
+  - Fixed attachment download issue on tickets
+  - Fixed inline image fetch issue
+  - Fixed password reset screen issue
+  - Fixed LDAP authentication not working
+
+|====================================================
+|   v1.9.35
+|====================================================
+This release was mainly focused on some critical issues and bugs which found their way into production in the last release. It also fixes some long pending issues with reports to make the report module more useful for management teams.
+
+### Major Bugs
+ - Browser compatibility issue in client panel for Internet Explorer.
+ - Email package mail fetching issue for office 365 mail account.
+ - Inline attachments not showing properly for fetched mails which are sent from outlook app
+ - Email package collaborator functionality not working properly.
+ - Issues with ticket merge module
+ - Issues with report module and exporting eports
+   * Fixed filters in all reports
+   * Optimized management reports to load data and render data faster into table
+   * Allowing exporting of all report data at once, previously we could only download the data which was visible in the table.
+   * Report export uses queue to generate excel sheet in background and send an email to download the exported sheet once it completed the process.
+
+### Other bugs
+ - Showing login button on navbar in client panel
+ - UI fixes in client panel Vue components
+ - Inbox page UI element issues
+ - Fixed issue in filters of ticket table pages
+ - Optimized webpack bundle by sepearting bundles for admin, agent and client panel
+ - Status change issue for ticket reply by clients on the tickets whose owner are also agents in the system.
+
+
+|====================================================
+|   v1.9.34
+|====================================================
+Hot fix patch for v1.9.33
+
+### Bug fixed
+  - Updated Collaborator API
+  - LDAP authentication from client panel
+
+|====================================================
+|   v1.9.33
+|====================================================
+v1.9.33 introduces some major changes in the system. While some of them will enhance the user experience of the system, others will help us to optimize the system for better performance of the system. Here's the complete list of changes introduced in this release.
+
+### Used Vue.js in more places
+  We are updating the technology we are using in our system to ensure that the users are always using the system built using the best technology out there. As Vue has more advantages above normal JavaScript and HTML code, we are constantly converting the front end of the system into Vue to make the system modular.
+    - We recently reworked on our whole client panel and implemented the same functionalities with Vue. It will enhance the experience of your customers on the Helpdesk portal.
+    - Knowledge base also has been converted in Vue js with better performance and style.
+
+### Updated email package
+  We updated the email package we were using to perform mail fetching and mail sending process within the system.
+  New email settings page in Vue with more options to control incoming and outgoing functionality.
+
+### Add a note while changing status
+  Change status now will give you an option to post a comment or reply on the ticket directly while changing the status of ticket.
+
+### Add ticket owner to organization from ticket details page
+  While checking a ticket if your realize that the owner of ticket belongs to an already existing organization in the system then you can link the owner to that organization directly from the ticket.
+
+### Change status method rewritten
+  Rewritten the method used for changing status of ticket by breaking it down in smaller function for better readability.
+
+### Add custom fields to check enforcement of SLAs
+  It enables you to add your custom fields which you created in ticket form to check for specific value. When any ticket created with that value in specified fields it will enforce the SLA. It'll be useful if you have a fully custom form which you created according to your business need and you want to enforce particular SLA for certain custom fields.
+
+### Artisan command For Syncing users using LDAP
+  Artisan command has been added in the LDAP plugins which allows you to import the users using cron or scheduled jobs. The command is linked with single cron command and frequncy can be set from cron setting page
+
+### Bug fixes
+- SLA due date calumniation corrections
+- Due date was updating when agents who don't have permission to close or delete tickets try to close/delete a ticket.
+- UI elements updates
+- Issues with Lime Survey plugin and Ratings module
+- Fixed default status removal while editing the status.
+- Checkbox field issue in Workflow/Listeners
+- Department reports export issue
+- KB issues
+
+
+|====================================================
+|   v1.9.32
+|====================================================
+
+This release introduces fixes for some bugs and some refinement in logic implementation.
+
+### Enahancements
+* Enable auto-assignment for specific departments.
+* Allowing merging tickets of different users (only from new inbox layout table).
+* Assign tickets to a team using workflow or listeners.
+* Notifying Organization managers for their organization ticket activity(can be tweaked from alert and notices).
+* Templates for organization managers for their organization ticket activity.
+* Seperate acknowledgement mail templates for ticket create by agent and admin.
+* Allowing use of shortcodes in email templates subject.
+
+### Bug Fixes
+* Checkbox field matching issue in workflow/listener rules
+* Preventing new ticket creation when organization members reply on tickets of other users of their organization. If they are allowed to reply on their organization member's tickets it will add a thread in the same ticket else create a new ticket.
+* Refined billing UI and validations
+* Inbox page link refinements.
+* Organization-user association based on domain.
+
+
+|====================================================
+|   v1.9.31
+|====================================================
+Bug fixes and improvements
+  * Faveo probe page layout changed
+  * New inbox refinements and support for Internet Explorer
+  * Due date calculation issue fixes
+  * Fixed merged ticket issue when system does not have default status for closed purpose
+  * New inbox layout merge ticket fixes
+
+|====================================================
+|   v1.9.30
+|====================================================
+Issue fix patch for Inbox and other front end elements
+  * Fixed various issues reported in new inbox layout
+  * Implemented design improvements for new inbox layout
+  * Fixed backed response issues for inbox APIs
+  * Fixed issue with canned response occured in last release
+  * Fixed Front end validation issues for Workflow and listeners
+  * Removed requester email fields in ticket fields of workflow and listener as it was resulting in ambiguity
+  * Given option for organization managers to approve tickets of their organizations
+  * Handling deleting linked entity deletion scenario for Workflow/Listeners with Observer classes
+  * Updated due date calculations for handling halted time of tickets
+
+|====================================================
+|   v1.9.29
+|====================================================
+Issue fix patch for Workflow/Listeners
+
+### Bugs fixed
+  * Issues with saving custom fields in workflow and listeners
+  * Fixed issues to make only first level of custom field of rule/action as reuired when a nested custom field of Nth level is add in rule/action of workflow and listeners
+  * Fixed client panel ticket table check box issue
+  * Hid priority from display in client panel
+
+|====================================================
+|   v1.9.28
+|====================================================
+v1.9.28 is second release in the series of frequent releases to make Faveo stable and better. This release covers various bug fixes and improvements in the code.
+## Improvements and enhancements
+* ### New inbox layout
+  We are happy to roll out our must awaited enhancement for ticket tables which we'd been planning for a while. v1.9.28 has a new inbox layout built using VUE.
+  #### What's new?
+  * Improved and better layout design for tables
+  * More details about the ticket in inbox
+  * Single click ticket view option in same inbox page
+  * Double click to open complete timeline page of a ticket
+  * Built using Vue which is the most favorable framework for front end in Laravel projects
+  * API based data rendering
+  * Optimized performance and clean code
+* Functionality to add organisation and organisation departments in Workflow, Listeners and SLA enforcement rules
+* SLA age calculation
+* ### Ratings via email
+  Get the opinion about your support by your clients directly via email. Send rating feedback email to clients.
+* ### Lime-Survey Plugin
+  Send feedback surveys to your clients using Lime-survey
+* ### Allowed override status
+Now while creating or editing a status admin can choose the list of statuses. When agent tries to change status of any ticket having the same status they will only see selected statuses in the drop down options.
+
+## Bug Fixes
+  * Ticket recur issue
+  * Custom source deletion issue
+  * Ticket forking issue
+  * Fixed Halt SLA with changing status via workflow/listeners
+  * Fixed SLA age issue for tickets created with Halt SLA statuses
+  * Listener/Workflow fixed nested custom fields required to select nth level
+  * API bug fixes
+
+|====================================================
+|   v1.9.27
+|====================================================
+
+Faveo had introduced auto update functionality for the system so that our customers can easily update their system automatically whenever Faveo releases a new version, without getting in touch with Faveo support team. The idea behind auto-update is to provide end users with the option to update their system independently without waiting for Faveo Support team to update their system. Initial releases for auto-updates were not working properly and clients were not able to update their system by themselves. This release fixes all the issues with auto-update to ensure hassle free update of your system with the latest released version.
+
+
+|====================================================
+|   v1.9.26
+|====================================================
+This release is a hot fix release which handle missing scripts in the prevoius release regarding database updates and redis databse.
+
+====================================================
+|   V1.9.25
+|====================================================
+
+Faveo team is constantly working towards improving existing features in the application along with bug fixing and new enhancements to make the application faster and more user friendly, so you can support your customers easily and in a better way.
+
+To make Faveo more stable and better our team has started inspecting existing features which are the essential part of any Helpdesk system and implementing improved logic to refine the functionality of those features.  There will be frequent releases to roll out those update patches for our customers and these release is the first step towards making our application more stable.
+
+v1.9.25 introduces some improvement patches along with bug fixes.
+
+## Improvements and changelog
+
+### Rethink APIs
+In earlier stages of our API development we missed out to follow proper structure for response and parameters. It might seem like a trivial problem but it prevents other developers and coders to integrate their application or use our APIs to build something on top of the Helpdesk. We've rethought this and rewritten our APIs to follow standards of REST APIs. It will allow other developers to collaborate with Faveo team and make new pluigns, to integrate other applications faster and better.
+Along with rewriting the APIs we have introduced some new APIs for client users which can be used to access client panel functionality via APIs. To read more about the changes in API please follow our API document.
+
+>**Please note**: Instead of creating new version of API to maintain old integrations our team has reworked on the same old APIs, changed response and parameter structure of the same old APIs(We are still learning). If you have used our APIs in your application, you might want to check the new changes in API to update your application accordingly.
+> **Faveo Mobile apps have been updated and updates will be available for download on play store and app store soon**
+
+### Rethink status change
+* In a system when you put a ticket on **hold** status and waiting for client reply system will keep the status as **hold** until client replies back on the ticket or an agent manually updates the status.
+* Introduced one new status **Unapproved** which will be only visible to certain agents/managers who have permission to see the tickets with this status. This will give you the power to review tickets before your agents see the tickets and start working on it.
+
+### Rethink SLA Policy
+Set **HALT SLA** option as *yes* for all default status other than Open as SLA clock should stop when a ticket is closed or deleted as agents are no longer working on those tickets. It helps to evaluate agents performance better and also gives a correct estimation of time spent on a ticket so you can bill your client accordingly.
+> NOTE: Updating system will not change the HALT SLA option for existing status please do it manually by editing status to use in your system.
+
+### Rethink reports
+* Introduced new report for management teams of businesses which gives complete information of the tickets with data of custom fields raised in the system. This report can be filtered on different criteria and can be exported to excel sheet so management members can see overall system in a glance.
+* Fixed issue for calculating *Resolution SLA* in agents and department performance reports.
+
+### Rethink testing
+As we want to stabilize the application and make Faveo a bug free product. We are implementing new development process in our team(thanks to our new team members). Each bug and functionality should be written with Unit tests cases, so we can catch the bug before it goes to our testers. It will help us to reduce the bugs in our system and reduce the time to test and release the code, so we can roll out more updates.
+
+## Bug Fixes
+* Fixed issues in status SMS sending option (SMS plugin)
+* Introduced new templates for calendar plugin to send out task alerts in with specific information
+* Fixed issues in status CRUD functionality
+* Optimized admin layout by removing unnecessary JavaScript and CSS files.
+* Fixed issues in Custom JS plugin (firing inactive scripts)
+* Fixed case sensitivity issue in rule/condition check for workflow and listeners.
+
+|====================================================
+|   v1.9.24
+|====================================================
+In v1.9.23 we optimized and cleaned our code to make the system performance better and optimized ticket table to load data faster in ticket tables. There were few bugs which have been reported in v1.9.23 and this release resolves the severe bugs which may cause problems in the system.
+
+## Bug Fixed
+  - Issue with mail fetching or mail getting skipped from ticket thread
+  - Fixed issue in creating tickets when ticket form has attachment fields
+  - Handled exception in environment file values with spaces
+  - Calendar plugin: My task in top navbar is not clickable
+  - Ticket form attachment file size limit is chec
+  - Updated message and picture in in-app notification for system activities
+  - Stopped internal activity mail alerts with only "." in the message body
+
+|====================================================
+|   v1.9.23
+|====================================================
+v1.9.23 is all about performance optimization of the system and bug fixes for older versions.
+
+## Enhancement for better performance
+  - Optimized Ticket Tables
+      You might have encountered the slow loading of ticket tables as data of customer tickets increase in the system. We have optimized these tables for better and faster experience using Laravel's Eloquent Relationships. It helped us to optimize query execution time and allow us to pass more relevant json data in API requests for getting tickets.
+
+      * Default links for ticket tables will use new Relationship method to render ticket data in your table. If you want to load ticket tables using old query simply put `/old` in the URL of your ticket pages after `tickets`
+
+  - Style sheet and script minification
+      We have minified all external/3rd party CSS and JavaScript file along with loading only required scripts on every page to optimize page load time.
+
+## Bug Fixes
+ - Added All/Any option to match conditions in workflow
+ - Fixed rule execution process for custom fields in Workflow and Listeners
+ - Fixed Calendar plugin issues with templates
+ - Fixed Knowledge base issues with visibility, article creation and catogry
+ - Fixed auto close workflow status issue
+ - Fixed issues for helptopic and type linking
+ - UI issues
+
+
+|====================================================
+|   v1.9.22
+|====================================================
+This release is focused on optimizing the application to get better performance and load the pages faster on every browser. This release also provides bug fix patches for newly introduced features like Advance SLA enforcement, Workflow and Listeners.
+
+## Enhancement and features
+  * Visibility in labels allows you to choose who can view and add the labels on tickets
+  * Helptopic and type linking module
+  * Merge ticket from different users
+  * Optimized JavaScript and CSS for faster page load time
+  * Faveo external login allows  users to login to your app then migrate that session to Faveo so that the user does not have to login again in Faveo.
+
+## Bugs fixes and Improvements
+  * SLA enforcement was incorrect while adding labels/tags on tickets
+  * Listeners actions were not working properly.
+  * Workflow ordering was not working
+  * Workflow with custom fields was not working
+  * Various issues related to UI
+  * Issues in LDAP plugin
+  * Issues in Calendar plugin
+  * Issues in Auto-update module
+  * Improved system backup functionality while auto updation of the system
+
+## Next Release update :
+Faveo v1.10 will be release soon after this release which will introduce following features/improvements in the application
+  * Modularity in agent panel
+  * New inbox layout - Beta
+  * Improved logic
+  * Laravel framework update
+
+|====================================================
+|   v1.9.21
+|====================================================
+This release provides some hot-fix patches for v1.9.21.
+
+## Bugs Fixed
+
+  - Auto spell check issue with plugin fixed
+  - Billing module functionality issue
+  - Status tables implemented using Yajra and fixed delete status issue
+  - UI Fixes
+
+|====================================================
+|   v1.9.20
+|====================================================
+Faveo v1.9.20 provides better SLA enforcement options and allows you to define more precise workflow for your HelpDesk system. It has various improvement patches and new functionalities to ensure that your customer's queries are reaching to correct department, with correct priority and SLA plans.
+
+## Enhancement and features
+  * ### SLA Enforcement options
+    Define multiple enforcement rules for assigning correct SLA plan to tickets and calculate resolve time and resolution time.
+  * ### Improved Workflow with more options
+    Faveo had the option to define workflow for a ticket where you could define limited criteria to check Subject, email etc. in ticket and based on these criteria you could choose department or set priority or set helptopic of a ticket. This improvement in workflow reduces limitations on criteria(rules) to check and gives you option to define workflow actions based on various new criteria of ticket and user(requester of a ticket).
+
+    PLEASE NOTE: This update may result delete your old workflow rules.
+
+  * ### Listeners
+    Using workflow you can check ticket/user fields for certain rules and then define helptopic ,department etc for a ticket which satisfies all defined rules. Workflow is executed only when a ticket is getting created in the system, but many a times you would like to perform different actions on basis of some action already performed on a ticket after creation.
+    *Example:*
+      > Set status of ticket as "Waiting for response" whenever any agent replies on a ticket
+      OR
+      > Change priority of a ticket when department is changed.
+
+    Listeners are the set of event and action, which listens for defined events on tickets. Whenever any event takes place in on tickets listeners perform certain actions to update ticket. You can also define rules in listeners along with event and actions and make it more precise.
+  * ### Auto spell check
+    Editors in the system now has auto spell check functionality
+  * ### Support for REDIS
+    Now you can use REDIS as your queue to run scheduled jobs like sending outgoing mails etc.
+  * ### Dashboard Statistics Settings
+    Choose from various options to show tabs in Dashboard report table. You can also add custom fields in dashboard report table.
+  * ### API updates
+    Added new APIs for new functionalities. See our API documentation for more information
+
+## Bug fixes
+  - Duplicate ticket creation when agent/cc replies on ticket via mail
+  - User view mobile number allows unlimited numbers as mobile number field
+  - Auto update bugs
+  - Calendar Plug-in bugs
+  - Fixed issues reported on GitHub repo
+  - Improved UI and simplified user experience
+
+
+|====================================================
+|   v1.9.19
+|====================================================
+
+This release introduces some enhancements in the system including Calendar Plugin which allows agents to create public/private tasks on tickets and browser notifications to notify agents for any activity on their assigned tickets.
+
+Enhancements and featues
+  * Calendar plugin (version 1.0)
+    - Create public/private tasks in system
+    - Update task details
+    - Assign a task to multiple agents
+    - View all your tasks in calendar layout
+    - Link tasks to a ticket. Linked tickets can only be closed once all tasks are completed and closed.
+    - Mark task as closed after completion
+    - Send alerts for tasks via emails which can be updated from templates
+
+  * Web push notifications
+    - Sending browser push notifications on different browser using One signal APIs
+    - Notifications settings can be set from alerts and notices in admin panel
+
+  * Overdue label
+    - Improved logic for adding overdue labels on tickets
+    - Ignoring overdue if tickets are in trash
+    - Checking ticket's closing time and due time for adding overdue label in closed tickets
+  * Manual verification of account
+    - Manually verify user's account to give them access of the application
+    - Agents can manually verify emails and mobile number of users/other agents
+  * API Updates
+    - Added API to change user account status
+    - Changed response of master ticket API for sending profile pic of users and status of tickets in response
+
+Bug fixes
+  - Fixed issues reported on GitHub repo
+  - Improved UI and simplified user experience
+
+|====================================================
+|   v1.9.18
+|====================================================
+Hot Fix Patch for minor bugs
+
+Bug fixed
+* Timeline message extra space/line break issue
+* UTF-8 encoding issue in ticket title in timeline page
+* Installer fixed directory separator issue
+* Fixed issueus in auto-updates
+  - Showing upddate available even after the code is latest
+  - Only admins can trigger update
+  - Deleting top bar notification for available updates after auto-update proccess gets complete
+|====================================================
+|   v1.9.17
+|====================================================
+This release implements bug fixes for following users
+* Fincare
+* PSV
+* Charles
+* Craig
+
+Along with these a new auto-update module has been introduces in this release which will allow users to update their system by just one click.
+
+Bug fixes
+- Bugs in client requirements
+- GitHub issues
+
+|====================================================
+|   v1.9.16
+|====================================================
+This release updates the version of PHP Laravel framework to latest stable release of Laravel. Along with updates it has updates for some plugins and bug fix patches.
+
+### Change log
+- Laravel version updated to v5.5.18
+- Envato Plugin
+- KB element prototype1
+- SEO enhancements for KB pages and articles
+  Give meta title and meta descriptions for KB articles and Pages
+- Fixes for bugs in GitHub
+
+NOTE: As laravel 5.5 requires minimum PHP version 7.0 customers need to update PHP on their server in order to update Faveo version to v1.9.16
+|====================================================
+|   v1.9.15
+|====================================================
+This release introduces various new features and enhancements in functionalities which were implemented for customization requests of different clients.
+These release contains the update for requirements of `FinCare`, `PSV BANK`, `TILSOL`, `VIVANET` along with many feature enhancements and bug fixes in the system.
+
+**Below is the list of all updates in detail**
+
+* ### Custom forms for tickets are more advanced now
+  - As in previous release we'd introduced new form for ticket creation which can be customized completely  for both agent and client panel. In addition to that we've added more default fields which can be used in ticket forms. You can change/add labels to show in both client and agent panel.
+  - Now you can also pass parameters in ticket URL to render form with advance options like setting default value for fields in form, allowing clients to edit/fill value in form fields
+
+If you want to give default value of subject in ticket from and your users not to be able provide subject of tickets you can add parameters like below exapmle
+> http://faveo-system-url/create-ticket?subject=Pre%20filled%20ticket&subject_writable=1
+
+This will render form like below
+![form](https://user-images.githubusercontent.com/10759797/31535872-4ad92ac6-b01a-11e7-9d31-e923f8f43b5b.PNG)
+As you can see `subject` is already filled with the value we passed in parameter and not editable by user.
+
+*  ### Create ticket independently on department or helptopic
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As tickets form can be customized according to requirement, you can remove or add department fields to be shown in ticket form for both client and agent panel.
+
+* ### Google reCAPTCHA
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Added google reCAPTCHA in forms to protect your FAVEO system from spam and abuse.
+
+* ### More customized forms are available
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Like ticket form we have added  two more forms which can be customized as required.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  - **User/requester** : Allows you to add all custom detail request which you want to get from your cleints like their age, nationality etc.
+![user-requester](https://user-images.githubusercontent.com/10759797/31536514-8a980e14-b01c-11e7-989b-47da4c6eec3d.PNG)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  - **Organization** : Allows you to add more custom fields to get more details about the organizations you add in Faveo system.
+![orga](https://user-images.githubusercontent.com/10759797/31536519-937af51e-b01c-11e7-8589-73a340c53736.PNG)
+
+* ### Link multiple departments to helptopic
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Now you can add multiple departments to helptopic and link them in ticket form. It will allow you to show certain departments linked to a particular helptopic in ticket forms.
+![deptb](https://user-images.githubusercontent.com/10759797/31536640-fea719d0-b01c-11e7-913b-e15ccd0f4001.PNG)
+![4](https://user-images.githubusercontent.com/10759797/31536676-1adb23a8-b01d-11e7-8858-f5578c889cf7.gif)
+
+* ### Automatically assigen ticket to agents based on location and type(skill)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  You can now add location and type(skills) to agent profiles. These will be used in auto assignment module. All the tickets will be assigned to agents location wise and type wise. For that `type` and `location` fields have been added in default fields of ticket form.
+
+* ### Migrate your support system from `SPICEWORKS` to `FAVEO`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  If you are already using some system for your support/helpdesk and want to migrate to Faveo. Faveo has migration plugin to migrate your all data from your old system to Faveo. Migration plugin currently imports data from two systems which are listed below
+    - **Os Ticket**
+    - **SPICEWORKS**
+
+* ### Ticket Forking
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ticket forking allows you to create duplicate ticket if the tickets whose SLA has breached and still the issue has not been resolved. Forking a ticket will create a copy of ticket with fresh SLA.
+
+* ### Recurring tickets
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If you have a situation where same issue needs to be resolved repetitively then recurring tickets will make this easier for you. It can be helpful for scenarios like creating ticket for recurring bills etc.
+
+* ### Updates in LDAP plugin
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Previous version of LDAP plugin used to allow users login via their LDAP credentials. We've updated LDAP plugin to import information from LDAP server and use in FAVEO system.
+
+* ### Global access permission
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; New permission module was introduced in the last version. Global Access Permission allows agents to see tickets of all departments without belonging to them.
+
+* ### Reassigning tickets permission
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If ticket has been assigned to one agent then assigning that ticket to another agent is called reassigning the ticket. Reassigning ticket permission allows you to define which agent can reassign tickets to other agents.
+
+* ### Change due date of tickets
+Now you can change due date of tickets manually and set it for new date.
+
+* ### API updates
+  - Consistency in API parameters
+  - Change tickets status using API
+  - Merge tickets using API
+  - Assign tickets to agents using API
+  - Permission checks implemented for APIs
+
+* ### Bug Fixes
+  - Various bug fixes related to UI elements
+  - Bugs reported in older versions
+  - Enhanced user experience by catching exception and showing proper messages
+  - Add media attachment isssue
+  - **Department outgoing mails** : Sending outbound mails for departments using the mail selected for sending outbound mails from department settings.
+  - Rating issue
+    - Multiple rating UI
+    - Rating submission process updated
+    - Excluding admin/agent ticket request thread from rating comments
+|====================================================
+| v1.9.14
+|====================================================
+Updates and enhancements
+    Updates
+        * Updated GUI installer by breaking into more specific processes and better error handling while installation.
+        * Added command line installer using artisan commands
+        * More customized option for forms
+        * API based form for creating tickets for agent panel and cleint panel
+        * Added assignment and status change APIs
+        * Better UI for showing proper processing
+        * Customized form builder with more advance options and Settings
+        * Media files and attachment upload option with drag and drop functionality
+        * RTL transformation of layout pages in Admin, agent and client panel
+        * SMS plugins with templates, supports OTP verification for mobile
+        * White label plugin
+        * Migration Plugin for migrating data from other system to Faveo
+        * Assets management reports
+        * Better handling of deleting any entity like department, team, helptopic etc in the system.
+        * Better handling of ban and deactivate users accounts
+        * Updated knowledgebase for viewing articles and categories with pagination
+        * Added in-built help section to show FAQ, and to get in touch with Faveo support.
+
+    System Updates
+        * create more specific templates for alerts and notices via email or SMS
+        * various UI/UX enhancements
+        * Admin LTE theme updates
+        * API Updates
+            - consistency in parameter names
+            - Specify records to be fetched in an API call while fetching tickets
+        * Bug fixes in Service Desk plugin
+        * Updated permissions for agents
+
+    Bug fixes
+        * various UI/UX bugs fixed
+        * Fixed issues reported in v1.9.14
+
+|====================================================
+| v1.9.14-Beta
+|====================================================
+Updates and Enhancements
+
+    Enhancements
+        * Customized form builder with more advance options and Settings
+        * Media files and attachment upload option with drag and drop functionality
+        * RTL transformation of layout pages in Admin, agent and client panel
+        * SMS plugins with templates, supports OTP verification for mobile
+        * White label plugin
+        * Migration Plugin for migrating data from other system to Faveo
+        * Assets management reports
+
+    System Updates
+        * create more specific templates for alerts and notices via email or SMS
+        * various UI/UX enhancements
+        * Admin LTE theme updates
+        * API Updates
+            - consistency in parameter names
+            - Specify records to be fetched in an API call while fetching tickets
+        * Bug fixes in Service Desk plugin
+        * Updated permissions for agents
+
+    Bug fixes
+        * various UI/UX bugs fixed
+
+
+
+
+|====================================================
+| v1.9.13
+|====================================================
+Update and bug-fix patch
+
+Bug-fixes
+    * Updated getProilePicture function to retrieve profile pics of users
+    * Updated ticket_thread API to include system generated internal notes to show in mobile app
+    * Ticket number format issue fixed
+    * Saving users first and last name in respective fields in database while creating tickets
+    * Saving iOS and android app messages body in same format to show on web (Issue reported by Shekhar)
+    * Removing warning alert for mail configuration when an admin configures a system mail.
+
+|====================================================
+| v1.9.12
+|====================================================
+Bug-fix-Patch
+
+Bug fixed
+   * Ticket title UTF decoding issue in all ticket tables
+   * Sending registration confirmation mail to 'CC' users can be handled from alert and notices. Linked mail sending functionality to 'CC' users with alert and notices.
+   * Reset Password bug fixed.
+
+|====================================================
+| v1.9.11
+|====================================================
+API bug fix patch
+
+Bug fixed
+    Enabled push notification in iOS pro app
+    Fixed APIs for create and edit tickets
+
+|====================================================
+| v1.9.10
+|====================================================
+Update Patch for API and smart version
+
+Bug fixed
+   * Updated ticket listing API for returning correct data in response
+   * Returing thread in decreasing order of last update in API response
+   * Showing correct count of deleted ticekt in dashboard
+   * Fixed horizontal overflow issue in ticket timeline (cleint panel and agent panel)
+   * Updated socail and telephony plugins for ticket creation issues
+   * Fixed cleint panel Mytickets issue
+   * Removed old notification
+   * Fixed dummy data installation issue in smart encoded version
+
+|====================================================
+| v1.9.9
+|====================================================
+Bug fix patch
+
+Bug fixes
+    * Fixed create ticket API
+    * Fixed edit ticket API
+    * Fixed ticket listing APIs for inbox, closed, trash, unassigned
+    * Fixed ticket visibility issue in client panel
+    * Fixed ticket status change issue from my tickets in client panel
+    * Fixed Facebook login token parsing issue
+|====================================================
+| v1.9.8
+|====================================================
+Hot fix patch for Mobile apps issue
+
+Bug fixes
+
+    * Changed status code for Token expired error from 401 to 200 (Fix for mobile)
+    * Updated inbox, closed, trash, unassigend ticket APIs response for correct number of records(tickets)
+    * Removed white spaces from image file name for saving profile pictures
+    * Showing profile pic for both public and non public URL
+    * Fixed token mismatch error in plugins (chat and zapier)
+
+
+|====================================================
+| v1.9.7
+|====================================================
+This release provides another update for security patch and prevents attackers to execute any backdoor scripts uploaded using hidden attachment or as an attachment itself.
+
+Bug Fixes and enhancements
+
+    * Preventing execution of backdoor scripts
+    * Preventing php file uploads in user's profile pic
+    * Handling token mismatch error when the page is opened for too long ans session gets expired.
+    * Hid custom form data table headings when there is no custom data available for a ticket.
+
+|====================================================
+| v1.9.6
+|====================================================
+Bug-fix-patch
+    This is the bugfix patch for last release v1.9.5 for simple file rename
+
+Change-log
+    renamed model portal to Portal as servers are case sensative and this throws class not found exception.
+
+|====================================================
+| v1.9.5
+|====================================================
+
+This release mainly focuses on the updation of the framework used in the application. Along with framework update this release offers minor bug fixes for ticket filtration, UI releated issues and business hours, SLA issues, CSRF token checking.
+
+Change log
+
+    * Updated Laravel framework version to v5.4
+    * Enabled CSRF token checking while submitting form request
+
+Bug Fixes and enhancements
+
+    * Fixed issued in filteration by created/updated or due-on date
+    * Showing Proper user information in user filteration of tickets
+    * Dashboard report date range validation
+    * Fixed language for alets and notices in mails and in-app notifications
+
+|=====================================================
+| v1.9.4
+|=====================================================
+Enhancements
+
+    * Improved alert and notifications with activity log
+        # Tracking each activity done on the ticket by any agent or system and displaying it in ticket thread.
+        # Improved in app notification style
+        # Loading notification data using ajax calls to prevent unnecesarry data from loading
+        # Showing detailed information in notifications
+        # You can choose options to send alerts via mail or mobile notifications.
+        # You can select to whom these alerts should go.
+        # You can choose events to send the alerts.
+    * SLA and workflow improvements
+    * Updated system lanuage translation
+        # System level translation
+        # User account level translation
+        # Session level translation
+    * Advnance reports
+    * Advance Filtration
+
+Bug Fixes
+    * Fixed bugs in latest SLA Module.
+    * Removed duplicate and ambiguous options from various settings in admin panel.
+    * Fixed Iframe scroll bar issue in ticket time line.
+    * Fixed bugs listed in GitHub and reported by other users
+    * Fixed ticket pages tooltip UI format issue
+    * Change log
+
+Change Log
+    * Updated Faveo logo
+
+To read more about the updates and feature enhancements follow the link below
+http://ladybirdweb.com/support/show/faveo-helpdesk-pro-v194-released
+
+|======================================================
+| v1.9.1
+|======================================================
+Bug Fix Patches
+    This release contains fixes for various bugs and some UI changes and enhancements.
+
+|======================================================
+| v1.9.0
+|======================================================
+Enhancements
+    Add agents in Multiple departments
+    Auto assignment of the tickets using Round Robin algorithm
+    Dynamic SLA
+    Advance escalation reports
+    Tags and Labels for ticket filtration
+    Add bill for tickets
+    ITIL module
+    Advance reports
+    Multiple ticket assignment to agents and team
+
+Bug-fixes
+    Used Yajra Datatable in all ticket listing pages
+    Used Yajra Datatable in users list page
+    Advance search option in users list page
+    Used Yajra Datatable in agent list page
+    Removed duplicate queries from layout blade files
+
+
+Change log
+End User License Agreement updated
+
+
+|=======================================================
+| v1.0.8.0
+|=======================================================
+
+Enhancements
+
+    Advance user module
+    One command for all cron jobs
+    System report
+    Custom URL redircetion and SSL support in URL
+    Socail login
+    Due today tickets
+    Custom forms update
+    Dynamic priority settings
+    Email non mandatory
+    Laravle logs and queues
+    Ticket change status to show in client panel via settings.
+    Not to submit two tickets on double click of Ticket submit button.
+    Dashboard linking.
+    Incoming mail format check.
+    Added a thread for ticket reopen via email.
+    Ticket linking minor issue updated.
+    Nl2br added for ticket.
+    Different department users can view tickets if assigned.
+    Preventing fall back language from deleting.
+    Send email if checked to send email for first registration via agent panel.
+    Checking storage file permission while installation.
+    File info extension check during installation.
+    Curl extension check during installation.
+    Check for API mandatory.
+    RTL feature in email sending.
+
+Plugins
+
+    Calendar: add events on tickets and get reminders
+    SMS: Send message notification on client/agent 's mobile
+        -> MSG91
+        -> SMSLive247
+    Podio integration
+    Twitter integration
+    Facebook integration
+    Phone service integrations to create tickets from calls
+        -> Exotel
+        -> Mcube
+        -> Knowlarity
+    Zapier integration for chat
+    Chat servises
+        -> Livserv
+        ->  HappyFox
+
+Bug Fixes
+
+    Moved media files to upload folder.
+    Multiple file upload via attachment exception handling.
+    Attachment issue fixed for ticket reply.
+    File uploading according to server configuration of post_max_size.
+    Code cleanup.
+    Department ticket issue and naming convention.
+    Help topic issue fixed in ticket creation.
+    Pdf issue.
+    Custom Form issue fixed for text area.
+    Agent panel layout color changed for differentiation.
+    Nesting level issue fixed.
+    Proper ticket threads count in client panel.
+    Validating dot files access via URL.
+    Breadcrumbs Update.
+    Exception handling for database server down issue.
+    In app notification fixed for different department tickets.
+    First name and user name issue fixed.
+    YouTube icon link fixed.
+    Clear error form fields on resubmit of form in email create/edit.
+    Exception handling on re-uploads of pre-uploaded plugin.
+    Department wise ticket creation had some exception.
+    Changed naming convention for organization manager.
+    Fixed trash side bar numbering.
+
+
+|=======================================================
+| v1.0.7.7
+|=======================================================
+
+Bug Fixes
+
+    Removed multifile writing for installation.
+    Bug fixed on Installation for unwanted redirection back to first step
+    Email subject issue fixed for encrypted formats
+    Close ticket workflow issue fixed
+
+    |------------------------------------------
+    |Updating from 1.0.7.6 to 1.0.7.7
+    |------------------------------------------
+
+    To upgrade read instructions here http://ladybirdweb.com/support/show/v1077
+
+|=======================================================
+| v1.0.7.6
+|=======================================================
+
+Bug Fixes
+
+    Updated Config file for releasing
+
+|=======================================================
+| v1.0.7.5
+|=======================================================
+
+Enhancement
+
+    Changed email template from file system to database
+    Advanced Rating module
+    In App Notification Module is now per User
+    In App notification settings in admin panel
+    POP feature is added for fetching emails
+    Send mail from server using PHP mail feature is added for sending emails
+    Added more encryption options for sending emails
+    Removed Duplicate settings from system settings
+    One can do more advanced email diagnostics by choosing different emails
+    System Off line module Enhanced
+    Everything comes from language files now
+    Auto Close ticket workflow for closing a ticket in predefined days
+    Security settings added for secured login into the system
+    Error Debugging option added
+    Bugsnag integration added
+    Webhooks added for ticket creation
+    Added 3 new languages thanks to some of our clients (German, Russian, Italian)
+    Graph added to user profile
+    Remove organisation added in Client profile page
+    Graph and ticket list added Organisation page
+    GeoIp plugin added for Phone country code pickup
+    Faveo will be able to auto upgrade to new release from this version onwards
+    XSS Vulnerability check added
+    Upgrade from Laravel 5.0 to 5.2
+    Breadcrumbs
+    Auto update module
+
+Bug Fixes
+
+    Registration Module email issue
+    Pages in knowledge base had some issue
+    Complete UI improved and proper error messages are now displayed
+    Bug fixed in edit system workflow
+    Dashboard Graph smoothened
+    Check ticket details without logging
+    Install module – check for file permission issue
+    Added dummy data for dummy installation
+
+    |------------------------------------------
+    |Updating from 1.0.7.4 to 1.0.7.5
+    |------------------------------------------
+
+    To upgrade read instructions here http://ladybirdweb.com/support/show/v1075
+
+|=======================================================
+| v1.0.7.4
+|=======================================================
+
+Enhancement
+
+    Added STARTTLS encryption feature on email fetching settings
+
+|=======================================================
+| v1.0.7.3
+|=======================================================
+
+Bug Fixes
+
+    Email settings update issue
+
+|=======================================================
+| v1.0.7.2
+|=======================================================
+
+Bug Fixes
+
+    System failing if no system email is configured issue fixed
+
+Enhancement
+
+    Plugin Module updated for Pro Version
+
+|=======================================================
+| v1.0.7.1
+|=======================================================
+
+Bug Fixed
+
+    In app notification bug fixed
+    Ticket Listing hover issue fixed
+    Agent panel issue fixed for role agents
+    Template issue fixed
+
+|=======================================================
+| v1.0.7
+|=======================================================
+
+Enhancements
+
+    Ticket Workflow
+    Ticket Overdue Listing
+    In App Notification
+    Cron job separate settings
+    Select all to delete permanently from trash
+    Added Read Unread features in ticket listing pages
+    User linking to where ever usernames are displayed
+    Attachment upload-able while creating ticket from client panel
+    Enhanced email check while setting emails
+    Ticket rating enhanced
+
+Bug Fixed
+
+    Date sorting issue fixed
+    Department folder issue fixed
+    Group update issue fixed
+    Templates issue fixed
+    Email checking issue fixed
+    Ticket rating issue fixed
+
+    |------------------------------------------
+    |Updating from 1.0.6.10 to 1.0.7
+    |------------------------------------------
+
+    To upgrade read instructions here http://ladybirdweb.com/support/show/v107
+
+|======================================================
+| v1.0.6.10
+|======================================================
+
+Bug Fixed
+
+    Redirection issue fixed from ticket details page
+    Login dropdown box responsitivity issue fixed
+    Mailing issue for ticket reply and new ticket creation fixed
+    Email template issue fixed for replying tickets and auto response for ticket creation
+    Settings pages error display issue fixed for html type errors
+    Daily notification issue fixed for the new mail system integrated for faveo
+    Issue fixed for large size attachments
+
+Enhancements
+
+    Added loader image in datatable processing
+    Added readme.txt which will provide install instruction
+    Updated auth validation message and showing custom logo in auth/login page

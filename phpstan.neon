@@ -1,0 +1,4 @@
+parameters:
+    bootstrap: %rootDir%/../../../bootstrap/autoload.php
+    autoload_files:
+    - %rootDir%/../../../vendor/autoload.php

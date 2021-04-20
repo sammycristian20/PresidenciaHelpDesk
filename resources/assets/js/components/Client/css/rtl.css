@@ -1,0 +1,194 @@
+.rtl {
+	direction:rtl;
+}
+.float {
+	float: right !important;
+	padding-right: 0px;
+}
+
+.nav_dropdown{
+    right: -1px !important;
+    left: auto !important;
+}
+
+.nav_lang_dropdown{
+    left: -1px !important;
+    right: auto !important;
+    text-align: right !important;
+}
+
+.float1 {
+	float: right !important;
+}
+.left {
+	float :left !important;
+}
+.left1 {
+	float :left !important;
+	margin-left: 16px;
+}
+.align {
+	width: 100%;
+    text-align: right;
+}
+.align1 {
+    text-align: right !important;
+}
+.login {
+	z-index: 1000 !important;
+    right: inherit !important;
+    left:-1px;
+}
+.icon {
+	float: right;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+/*.site-navigation li>a>i.sub-indicator {
+	float: right;
+    margin-top: 2px;
+    margin-left: 5px;
+}*/
+.search {
+	float:left;
+}
+.social {
+	float: right !important;
+    text-align: left;
+}
+.glyphicon .glyphicon-envelope .form-control-feedback {
+	top:25px !important;
+}
+.pass {
+	margin-right: 67%;
+}
+.rem {
+	text-align: left !important;
+}
+.check {
+	margin-left: 3px !important;
+}
+.arrow {
+	right:75px !important;
+}
+.code {
+	float: left;
+    margin-left: -10px;
+    margin-top: 6px;
+}
+.flag {
+	margin-right: 0px !important;
+    float: right;
+    margin-top: 6px;
+}
+.country {
+	    margin-right: 5px ;
+}
+.coun_name {
+	float: right;
+    margin-top: 2px;
+}
+.coun_list{
+	text-align: right !important;
+}
+.art {
+	right: -2em !important;
+}
+.art_name {
+	margin-right: 38px !important;
+}
+.art_design{
+	border-right-width: 5px !important;
+    border-right-style: solid !important;
+    border-right-color: rgb(175, 175, 175) !important;
+    border-left-width: 0px !important;
+    margin-right: 36px !important;
+    text-align: right;
+}
+.article {
+	padding-left: 0 !important;
+}
+.padd {
+	padding-right: 0 !important;
+}
+.time {
+	margin-right: -16px !important;
+}
+.cmnt_foot {
+	border-left-width: 1px !important;
+    border-right-width: 5px !important;
+}
+.cmnt_tym { margin-right :3px !important;}
+.cmnt_tym_sym { margin-right :-4px !important;}
+.bod{
+	width: 96.5% !important;
+	margin-top: 10px !important;
+	padding-right: 45px !important;
+    padding-left: 0px !important;
+    padding-top: 20px !important;
+    padding-bottom: 10px !important;
+    margin-right: 26px;
+    position: relative;
+    border-bottom: 1px dotted #ccc;
+    border-right: 1px dotted #ccc !important;
+    border-left: 0px dotted #ccc !important;
+}
+.bod1{
+	width: 97.6% !important;
+    margin-top: 10px !important;
+    padding-right: 45px !important;
+    padding-left: 15px !important;
+    padding-top: 20px !important;
+    padding-bottom: 10px !important;
+    margin-right: 26px;
+    position: relative;
+    border-bottom: 1px dotted #ccc;
+    border-right: 1px dotted #ccc !important;
+    border-left: 0px dotted #ccc !important;
+}	
+.meta {
+    margin-top: -18px !important;
+    border-right-width: 5px !important;
+    border-left-width: 1px !important;
+}
+.img{
+	float: right !important;
+    margin-right: -92px !important;
+    margin-top: -8px !important;
+}
+.img1{
+	float: right !important;
+    margin-right: -105px !important;
+    margin-top: -8px !important;
+}
+.sector {
+	padding-right:0px !important;
+}
+.time_box {
+	    border-left-width: 0px !important;
+    border-right-width: 5px !important;
+    border-right-style: solid !important;
+}
+.load{
+    right:47% !important;
+}
+.load1{
+    right:36% !important;
+}
+.org {
+        margin-right: 80px !important;
+    margin-left: 0px !important;
+}
+.intl_input{
+    padding-right: 97px !important;
+    padding-left: 0px !important;
+}
+.tel {
+    right:0 !important;
+}
+.gylp {
+    right: 459px !important;
+}
+.pro_pic {
+margin-right: 15px !important;
+}

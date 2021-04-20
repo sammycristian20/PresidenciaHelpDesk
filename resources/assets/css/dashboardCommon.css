@@ -1,0 +1,20 @@
+.no-data-section {
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+  color: #666;
+  font-weight: 600;
+  line-height: 1.2;
+  font-size: 14px;
+  /*font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;*/
+}
+.fa-refresh {
+  cursor: pointer;
+}
+.dashboard-widget-box {
+  height: 50vh;
+}
+.scrollable-area {
+  height: 80%;
+  overflow: auto;
+}

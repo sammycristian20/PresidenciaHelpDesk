@@ -1,0 +1,2971 @@
+{
+"data": [
+{
+"icon_class": "fas fa-address-book"
+},
+{
+"icon_class": "fas fa-address-card"
+},
+{
+"icon_class": "fas fa-adjust"
+},
+{
+"icon_class": "fas fa-align-center"
+},
+{
+"icon_class": "fas fa-align-justify"
+},
+{
+"icon_class": "fas fa-align-left"
+},
+{
+"icon_class": "fas fa-align-right"
+},
+{
+"icon_class": "fas fa-allergies"
+},
+{
+"icon_class": "fas fa-ambulance"
+},
+{
+"icon_class": "fas fa-american-sign-language-interpreting"
+},
+{
+"icon_class": "fas fa-anchor"
+},
+{
+"icon_class": "fas fa-angle-double-down"
+},
+{
+"icon_class": "fas fa-angle-double-left"
+},
+{
+"icon_class": "fas fa-angle-double-right"
+},
+{
+"icon_class": "fas fa-angle-double-up"
+},
+{
+"icon_class": "fas fa-angle-down"
+},
+{
+"icon_class": "fas fa-angle-left"
+},
+{
+"icon_class": "fas fa-angle-right"
+},
+{
+"icon_class": "fas fa-angle-up"
+},
+{
+"icon_class": "fas fa-archive"
+},
+{
+"icon_class": "fas fa-arrow-alt-circle-down"
+},
+{
+"icon_class": "fas fa-arrow-alt-circle-left"
+},
+{
+"icon_class": "fas fa-arrow-alt-circle-right"
+},
+{
+"icon_class": "fas fa-arrow-alt-circle-up"
+},
+{
+"icon_class": "fas fa-arrow-circle-down"
+},
+{
+"icon_class": "fas fa-arrow-circle-left"
+},
+{
+"icon_class": "fas fa-arrow-circle-right"
+},
+{
+"icon_class": "fas fa-arrow-circle-up"
+},
+{
+"icon_class": "fas fa-arrow-down"
+},
+{
+"icon_class": "fas fa-arrow-left"
+},
+{
+"icon_class": "fas fa-arrow-right"
+},
+{
+"icon_class": "fas fa-arrow-up"
+},
+{
+"icon_class": "fas fa-arrows-alt"
+},
+{
+"icon_class": "fas fa-arrows-alt-h"
+},
+{
+"icon_class": "fas fa-arrows-alt-v"
+},
+{
+"icon_class": "fas fa-assistive-listening-systems"
+},
+{
+"icon_class": "fas fa-asterisk"
+},
+{
+"icon_class": "fas fa-at"
+},
+{
+"icon_class": "fas fa-audio-description"
+},
+{
+"icon_class": "fas fa-backward"
+},
+{
+"icon_class": "fas fa-balance-scale"
+},
+{
+"icon_class": "fas fa-ban"
+},
+{
+"icon_class": "fas fa-band-aid"
+},
+{
+"icon_class": "fas fa-barcode"
+},
+{
+"icon_class": "fas fa-bars"
+},
+{
+"icon_class": "fas fa-baseball-ball"
+},
+{
+"icon_class": "fas fa-basketball-ball"
+},
+{
+"icon_class": "fas fa-bath"
+},
+{
+"icon_class": "fas fa-battery-empty"
+},
+{
+"icon_class": "fas fa-battery-full"
+},
+{
+"icon_class": "fas fa-battery-half"
+},
+{
+"icon_class": "fas fa-battery-quarter"
+},
+{
+"icon_class": "fas fa-battery-three-quarters"
+},
+{
+"icon_class": "fas fa-bed"
+},
+{
+"icon_class": "fas fa-beer"
+},
+{
+"icon_class": "fas fa-bell"
+},
+{
+"icon_class": "fas fa-bell-slash"
+},
+{
+"icon_class": "fas fa-bicycle"
+},
+{
+"icon_class": "fas fa-binoculars"
+},
+{
+"icon_class": "fas fa-birthday-cake"
+},
+{
+"icon_class": "fas fa-blind"
+},
+{
+"icon_class": "fas fa-bold"
+},
+{
+"icon_class": "fas fa-bolt"
+},
+{
+"icon_class": "fas fa-bomb"
+},
+{
+"icon_class": "fas fa-book"
+},
+{
+"icon_class": "fas fa-bookmark"
+},
+{
+"icon_class": "fas fa-bowling-ball"
+},
+{
+"icon_class": "fas fa-box"
+},
+{
+"icon_class": "fas fa-box-open"
+},
+{
+"icon_class": "fas fa-boxes"
+},
+{
+"icon_class": "fas fa-braille"
+},
+{
+"icon_class": "fas fa-briefcase"
+},
+{
+"icon_class": "fas fa-briefcase-medical"
+},
+{
+"icon_class": "fas fa-bug"
+},
+{
+"icon_class": "fas fa-building"
+},
+{
+"icon_class": "fas fa-bullhorn"
+},
+{
+"icon_class": "fas fa-bullseye"
+},
+{
+"icon_class": "fas fa-burn"
+},
+{
+"icon_class": "fas fa-bus"
+},
+{
+"icon_class": "fas fa-calculator"
+},
+{
+"icon_class": "fas fa-calendar"
+},
+{
+"icon_class": "fas fa-calendar-alt"
+},
+{
+"icon_class": "fas fa-calendar-check"
+},
+{
+"icon_class": "fas fa-calendar-minus"
+},
+{
+"icon_class": "fas fa-calendar-plus"
+},
+{
+"icon_class": "fas fa-calendar-times"
+},
+{
+"icon_class": "fas fa-camera"
+},
+{
+"icon_class": "fas fa-camera-retro"
+},
+{
+"icon_class": "fas fa-capsules"
+},
+{
+"icon_class": "fas fa-car"
+},
+{
+"icon_class": "fas fa-caret-down"
+},
+{
+"icon_class": "fas fa-caret-left"
+},
+{
+"icon_class": "fas fa-caret-right"
+},
+{
+"icon_class": "fas fa-caret-square-down"
+},
+{
+"icon_class": "fas fa-caret-square-left"
+},
+{
+"icon_class": "fas fa-caret-square-right"
+},
+{
+"icon_class": "fas fa-caret-square-up"
+},
+{
+"icon_class": "fas fa-caret-up"
+},
+{
+"icon_class": "fas fa-cart-arrow-down"
+},
+{
+"icon_class": "fas fa-cart-plus"
+},
+{
+"icon_class": "fas fa-certificate"
+},
+{
+"icon_class": "fas fa-chart-area"
+},
+{
+"icon_class": "fas fa-chart-bar"
+},
+{
+"icon_class": "fas fa-chart-line"
+},
+{
+"icon_class": "fas fa-chart-pie"
+},
+{
+"icon_class": "fas fa-check"
+},
+{
+"icon_class": "fas fa-check-circle"
+},
+{
+"icon_class": "fas fa-check-square"
+},
+{
+"icon_class": "fas fa-chess"
+},
+{
+"icon_class": "fas fa-chess-bishop"
+},
+{
+"icon_class": "fas fa-chess-board"
+},
+{
+"icon_class": "fas fa-chess-king"
+},
+{
+"icon_class": "fas fa-chess-knight"
+},
+{
+"icon_class": "fas fa-chess-pawn"
+},
+{
+"icon_class": "fas fa-chess-queen"
+},
+{
+"icon_class": "fas fa-chess-rook"
+},
+{
+"icon_class": "fas fa-chevron-circle-down"
+},
+{
+"icon_class": "fas fa-chevron-circle-left"
+},
+{
+"icon_class": "fas fa-chevron-circle-right"
+},
+{
+"icon_class": "fas fa-chevron-circle-up"
+},
+{
+"icon_class": "fas fa-chevron-down"
+},
+{
+"icon_class": "fas fa-chevron-left"
+},
+{
+"icon_class": "fas fa-chevron-right"
+},
+{
+"icon_class": "fas fa-chevron-up"
+},
+{
+"icon_class": "fas fa-child"
+},
+{
+"icon_class": "fas fa-circle"
+},
+{
+"icon_class": "fas fa-circle-notch"
+},
+{
+"icon_class": "fas fa-clipboard"
+},
+{
+"icon_class": "fas fa-clipboard-check"
+},
+{
+"icon_class": "fas fa-clipboard-list"
+},
+{
+"icon_class": "fas fa-clock"
+},
+{
+"icon_class": "fas fa-clone"
+},
+{
+"icon_class": "fas fa-closed-captioning"
+},
+{
+"icon_class": "fas fa-cloud"
+},
+{
+"icon_class": "fas fa-cloud-download-alt"
+},
+{
+"icon_class": "fas fa-cloud-upload-alt"
+},
+{
+"icon_class": "fas fa-code"
+},
+{
+"icon_class": "fas fa-code-branch"
+},
+{
+"icon_class": "fas fa-coffee"
+},
+{
+"icon_class": "fas fa-cog"
+},
+{
+"icon_class": "fas fa-cogs"
+},
+{
+"icon_class": "fas fa-columns"
+},
+{
+"icon_class": "fas fa-comment"
+},
+{
+"icon_class": "fas fa-comment-alt"
+},
+{
+"icon_class": "fas fa-comment-dots"
+},
+{
+"icon_class": "fas fa-comment-slash"
+},
+{
+"icon_class": "fas fa-comments"
+},
+{
+"icon_class": "fas fa-compass"
+},
+{
+"icon_class": "fas fa-compress"
+},
+{
+"icon_class": "fas fa-copy"
+},
+{
+"icon_class": "fas fa-copyright"
+},
+{
+"icon_class": "fas fa-couch"
+},
+{
+"icon_class": "fas fa-credit-card"
+},
+{
+"icon_class": "fas fa-crop"
+},
+{
+"icon_class": "fas fa-crosshairs"
+},
+{
+"icon_class": "fas fa-cube"
+},
+{
+"icon_class": "fas fa-cubes"
+},
+{
+"icon_class": "fas fa-cut"
+},
+{
+"icon_class": "fas fa-database"
+},
+{
+"icon_class": "fas fa-deaf"
+},
+{
+"icon_class": "fas fa-desktop"
+},
+{
+"icon_class": "fas fa-diagnoses"
+},
+{
+"icon_class": "fas fa-dna"
+},
+{
+"icon_class": "fas fa-dollar-sign"
+},
+{
+"icon_class": "fas fa-dolly"
+},
+{
+"icon_class": "fas fa-dolly-flatbed"
+},
+{
+"icon_class": "fas fa-donate"
+},
+{
+"icon_class": "fas fa-dot-circle"
+},
+{
+"icon_class": "fas fa-dove"
+},
+{
+"icon_class": "fas fa-download"
+},
+{
+"icon_class": "fas fa-edit"
+},
+{
+"icon_class": "fas fa-eject"
+},
+{
+"icon_class": "fas fa-ellipsis-h"
+},
+{
+"icon_class": "fas fa-ellipsis-v"
+},
+{
+"icon_class": "fas fa-envelope"
+},
+{
+"icon_class": "fas fa-envelope-open"
+},
+{
+"icon_class": "fas fa-envelope-square"
+},
+{
+"icon_class": "fas fa-eraser"
+},
+{
+"icon_class": "fas fa-euro-sign"
+},
+{
+"icon_class": "fas fa-exchange-alt"
+},
+{
+"icon_class": "fas fa-exclamation"
+},
+{
+"icon_class": "fas fa-exclamation-circle"
+},
+{
+"icon_class": "fas fa-exclamation-triangle"
+},
+{
+"icon_class": "fas fa-expand"
+},
+{
+"icon_class": "fas fa-expand-arrows-alt"
+},
+{
+"icon_class": "fas fa-external-link-alt"
+},
+{
+"icon_class": "fas fa-external-link-square-alt"
+},
+{
+"icon_class": "fas fa-eye"
+},
+{
+"icon_class": "fas fa-eye-dropper"
+},
+{
+"icon_class": "fas fa-eye-slash"
+},
+{
+"icon_class": "fas fa-fast-backward"
+},
+{
+"icon_class": "fas fa-fast-forward"
+},
+{
+"icon_class": "fas fa-fax"
+},
+{
+"icon_class": "fas fa-female"
+},
+{
+"icon_class": "fas fa-fighter-jet"
+},
+{
+"icon_class": "fas fa-file"
+},
+{
+"icon_class": "fas fa-file-alt"
+},
+{
+"icon_class": "fas fa-file-archive"
+},
+{
+"icon_class": "fas fa-file-audio"
+},
+{
+"icon_class": "fas fa-file-code"
+},
+{
+"icon_class": "fas fa-file-excel"
+},
+{
+"icon_class": "fas fa-file-image"
+},
+{
+"icon_class": "fas fa-file-medical"
+},
+{
+"icon_class": "fas fa-file-medical-alt"
+},
+{
+"icon_class": "fas fa-file-pdf"
+},
+{
+"icon_class": "fas fa-file-powerpoint"
+},
+{
+"icon_class": "fas fa-file-video"
+},
+{
+"icon_class": "fas fa-file-word"
+},
+{
+"icon_class": "fas fa-film"
+},
+{
+"icon_class": "fas fa-filter"
+},
+{
+"icon_class": "fas fa-fire"
+},
+{
+"icon_class": "fas fa-fire-extinguisher"
+},
+{
+"icon_class": "fas fa-first-aid"
+},
+{
+"icon_class": "fas fa-flag"
+},
+{
+"icon_class": "fas fa-flag-checkered"
+},
+{
+"icon_class": "fas fa-flask"
+},
+{
+"icon_class": "fas fa-folder"
+},
+{
+"icon_class": "fas fa-folder-open"
+},
+{
+"icon_class": "fas fa-font"
+},
+{
+"icon_class": "fas fa-football-ball"
+},
+{
+"icon_class": "fas fa-forward"
+},
+{
+"icon_class": "fas fa-frown"
+},
+{
+"icon_class": "fas fa-futbol"
+},
+{
+"icon_class": "fas fa-gamepad"
+},
+{
+"icon_class": "fas fa-gavel"
+},
+{
+"icon_class": "fas fa-gem"
+},
+{
+"icon_class": "fas fa-genderless"
+},
+{
+"icon_class": "fas fa-gift"
+},
+{
+"icon_class": "fas fa-glass-martini"
+},
+{
+"icon_class": "fas fa-globe"
+},
+{
+"icon_class": "fas fa-golf-ball"
+},
+{
+"icon_class": "fas fa-graduation-cap"
+},
+{
+"icon_class": "fas fa-h-square"
+},
+{
+"icon_class": "fas fa-hand-holding"
+},
+{
+"icon_class": "fas fa-hand-holding-heart"
+},
+{
+"icon_class": "fas fa-hand-holding-usd"
+},
+{
+"icon_class": "fas fa-hand-lizard"
+},
+{
+"icon_class": "fas fa-hand-paper"
+},
+{
+"icon_class": "fas fa-hand-peace"
+},
+{
+"icon_class": "fas fa-hand-point-down"
+},
+{
+"icon_class": "fas fa-hand-point-left"
+},
+{
+"icon_class": "fas fa-hand-point-right"
+},
+{
+"icon_class": "fas fa-hand-point-up"
+},
+{
+"icon_class": "fas fa-hand-pointer"
+},
+{
+"icon_class": "fas fa-hand-rock"
+},
+{
+"icon_class": "fas fa-hand-scissors"
+},
+{
+"icon_class": "fas fa-hand-spock"
+},
+{
+"icon_class": "fas fa-hands"
+},
+{
+"icon_class": "fas fa-hands-helping"
+},
+{
+"icon_class": "fas fa-handshake"
+},
+{
+"icon_class": "fas fa-hashtag"
+},
+{
+"icon_class": "fas fa-hdd"
+},
+{
+"icon_class": "fas fa-heading"
+},
+{
+"icon_class": "fas fa-headphones"
+},
+{
+"icon_class": "fas fa-heart"
+},
+{
+"icon_class": "fas fa-heartbeat"
+},
+{
+"icon_class": "fas fa-history"
+},
+{
+"icon_class": "fas fa-hockey-puck"
+},
+{
+"icon_class": "fas fa-home"
+},
+{
+"icon_class": "fas fa-hospital"
+},
+{
+"icon_class": "fas fa-hospital-alt"
+},
+{
+"icon_class": "fas fa-hospital-symbol"
+},
+{
+"icon_class": "fas fa-hourglass"
+},
+{
+"icon_class": "fas fa-hourglass-end"
+},
+{
+"icon_class": "fas fa-hourglass-half"
+},
+{
+"icon_class": "fas fa-hourglass-start"
+},
+{
+"icon_class": "fas fa-i-cursor"
+},
+{
+"icon_class": "fas fa-id-badge"
+},
+{
+"icon_class": "fas fa-id-card"
+},
+{
+"icon_class": "fas fa-id-card-alt"
+},
+{
+"icon_class": "fas fa-image"
+},
+{
+"icon_class": "fas fa-images"
+},
+{
+"icon_class": "fas fa-inbox"
+},
+{
+"icon_class": "fas fa-indent"
+},
+{
+"icon_class": "fas fa-industry"
+},
+{
+"icon_class": "fas fa-info"
+},
+{
+"icon_class": "fas fa-info-circle"
+},
+{
+"icon_class": "fas fa-italic"
+},
+{
+"icon_class": "fas fa-key"
+},
+{
+"icon_class": "fas fa-keyboard"
+},
+{
+"icon_class": "fas fa-language"
+},
+{
+"icon_class": "fas fa-laptop"
+},
+{
+"icon_class": "fas fa-leaf"
+},
+{
+"icon_class": "fas fa-lemon"
+},
+{
+"icon_class": "fas fa-level-down-alt"
+},
+{
+"icon_class": "fas fa-level-up-alt"
+},
+{
+"icon_class": "fas fa-life-ring"
+},
+{
+"icon_class": "fas fa-lightbulb"
+},
+{
+"icon_class": "fas fa-link"
+},
+{
+"icon_class": "fas fa-lira-sign"
+},
+{
+"icon_class": "fas fa-list"
+},
+{
+"icon_class": "fas fa-list-alt"
+},
+{
+"icon_class": "fas fa-list-ol"
+},
+{
+"icon_class": "fas fa-list-ul"
+},
+{
+"icon_class": "fas fa-location-arrow"
+},
+{
+"icon_class": "fas fa-lock"
+},
+{
+"icon_class": "fas fa-lock-open"
+},
+{
+"icon_class": "fas fa-long-arrow-alt-down"
+},
+{
+"icon_class": "fas fa-long-arrow-alt-left"
+},
+{
+"icon_class": "fas fa-long-arrow-alt-right"
+},
+{
+"icon_class": "fas fa-long-arrow-alt-up"
+},
+{
+"icon_class": "fas fa-low-vision"
+},
+{
+"icon_class": "fas fa-magic"
+},
+{
+"icon_class": "fas fa-magnet"
+},
+{
+"icon_class": "fas fa-male"
+},
+{
+"icon_class": "fas fa-map"
+},
+{
+"icon_class": "fas fa-map-marker"
+},
+{
+"icon_class": "fas fa-map-marker-alt"
+},
+{
+"icon_class": "fas fa-map-pin"
+},
+{
+"icon_class": "fas fa-map-signs"
+},
+{
+"icon_class": "fas fa-mars"
+},
+{
+"icon_class": "fas fa-mars-double"
+},
+{
+"icon_class": "fas fa-mars-stroke"
+},
+{
+"icon_class": "fas fa-mars-stroke-h"
+},
+{
+"icon_class": "fas fa-mars-stroke-v"
+},
+{
+"icon_class": "fas fa-medkit"
+},
+{
+"icon_class": "fas fa-meh"
+},
+{
+"icon_class": "fas fa-mercury"
+},
+{
+"icon_class": "fas fa-microchip"
+},
+{
+"icon_class": "fas fa-microphone"
+},
+{
+"icon_class": "fas fa-microphone-slash"
+},
+{
+"icon_class": "fas fa-minus"
+},
+{
+"icon_class": "fas fa-minus-circle"
+},
+{
+"icon_class": "fas fa-minus-square"
+},
+{
+"icon_class": "fas fa-mobile"
+},
+{
+"icon_class": "fas fa-mobile-alt"
+},
+{
+"icon_class": "fas fa-money-bill-alt"
+},
+{
+"icon_class": "fas fa-moon"
+},
+{
+"icon_class": "fas fa-motorcycle"
+},
+{
+"icon_class": "fas fa-mouse-pointer"
+},
+{
+"icon_class": "fas fa-music"
+},
+{
+"icon_class": "fas fa-neuter"
+},
+{
+"icon_class": "fas fa-newspaper"
+},
+{
+"icon_class": "fas fa-notes-medical"
+},
+{
+"icon_class": "fas fa-object-group"
+},
+{
+"icon_class": "fas fa-object-ungroup"
+},
+{
+"icon_class": "fas fa-outdent"
+},
+{
+"icon_class": "fas fa-paint-brush"
+},
+{
+"icon_class": "fas fa-pallet"
+},
+{
+"icon_class": "fas fa-paper-plane"
+},
+{
+"icon_class": "fas fa-paperclip"
+},
+{
+"icon_class": "fas fa-parachute-box"
+},
+{
+"icon_class": "fas fa-paragraph"
+},
+{
+"icon_class": "fas fa-paste"
+},
+{
+"icon_class": "fas fa-pause"
+},
+{
+"icon_class": "fas fa-pause-circle"
+},
+{
+"icon_class": "fas fa-paw"
+},
+{
+"icon_class": "fas fa-pen-square"
+},
+{
+"icon_class": "fas fa-pencil-alt"
+},
+{
+"icon_class": "fas fa-people-carry"
+},
+{
+"icon_class": "fas fa-percent"
+},
+{
+"icon_class": "fas fa-phone"
+},
+{
+"icon_class": "fas fa-phone-slash"
+},
+{
+"icon_class": "fas fa-phone-square"
+},
+{
+"icon_class": "fas fa-phone-volume"
+},
+{
+"icon_class": "fas fa-piggy-bank"
+},
+{
+"icon_class": "fas fa-pills"
+},
+{
+"icon_class": "fas fa-plane"
+},
+{
+"icon_class": "fas fa-play"
+},
+{
+"icon_class": "fas fa-play-circle"
+},
+{
+"icon_class": "fas fa-plug"
+},
+{
+"icon_class": "fas fa-plus"
+},
+{
+"icon_class": "fas fa-plus-circle"
+},
+{
+"icon_class": "fas fa-plus-square"
+},
+{
+"icon_class": "fas fa-podcast"
+},
+{
+"icon_class": "fas fa-poo"
+},
+{
+"icon_class": "fas fa-pound-sign"
+},
+{
+"icon_class": "fas fa-power-off"
+},
+{
+"icon_class": "fas fa-prescription-bottle"
+},
+{
+"icon_class": "fas fa-prescription-bottle-alt"
+},
+{
+"icon_class": "fas fa-print"
+},
+{
+"icon_class": "fas fa-procedures"
+},
+{
+"icon_class": "fas fa-puzzle-piece"
+},
+{
+"icon_class": "fas fa-qrcode"
+},
+{
+"icon_class": "fas fa-question"
+},
+{
+"icon_class": "fas fa-question-circle"
+},
+{
+"icon_class": "fas fa-quidditch"
+},
+{
+"icon_class": "fas fa-quote-left"
+},
+{
+"icon_class": "fas fa-quote-right"
+},
+{
+"icon_class": "fas fa-random"
+},
+{
+"icon_class": "fas fa-recycle"
+},
+{
+"icon_class": "fas fa-redo"
+},
+{
+"icon_class": "fas fa-redo-alt"
+},
+{
+"icon_class": "fas fa-registered"
+},
+{
+"icon_class": "fas fa-reply"
+},
+{
+"icon_class": "fas fa-reply-all"
+},
+{
+"icon_class": "fas fa-retweet"
+},
+{
+"icon_class": "fas fa-ribbon"
+},
+{
+"icon_class": "fas fa-road"
+},
+{
+"icon_class": "fas fa-rocket"
+},
+{
+"icon_class": "fas fa-rss"
+},
+{
+"icon_class": "fas fa-rss-square"
+},
+{
+"icon_class": "fas fa-ruble-sign"
+},
+{
+"icon_class": "fas fa-rupee-sign"
+},
+{
+"icon_class": "fas fa-save"
+},
+{
+"icon_class": "fas fa-search"
+},
+{
+"icon_class": "fas fa-search-minus"
+},
+{
+"icon_class": "fas fa-search-plus"
+},
+{
+"icon_class": "fas fa-seedling"
+},
+{
+"icon_class": "fas fa-server"
+},
+{
+"icon_class": "fas fa-share"
+},
+{
+"icon_class": "fas fa-share-alt"
+},
+{
+"icon_class": "fas fa-share-alt-square"
+},
+{
+"icon_class": "fas fa-share-square"
+},
+{
+"icon_class": "fas fa-shekel-sign"
+},
+{
+"icon_class": "fas fa-shield-alt"
+},
+{
+"icon_class": "fas fa-ship"
+},
+{
+"icon_class": "fas fa-shipping-fast"
+},
+{
+"icon_class": "fas fa-shopping-bag"
+},
+{
+"icon_class": "fas fa-shopping-basket"
+},
+{
+"icon_class": "fas fa-shopping-cart"
+},
+{
+"icon_class": "fas fa-shower"
+},
+{
+"icon_class": "fas fa-sign"
+},
+{
+"icon_class": "fas fa-sign-in-alt"
+},
+{
+"icon_class": "fas fa-sign-language"
+},
+{
+"icon_class": "fas fa-sign-out-alt"
+},
+{
+"icon_class": "fas fa-signal"
+},
+{
+"icon_class": "fas fa-sitemap"
+},
+{
+"icon_class": "fas fa-sliders-h"
+},
+{
+"icon_class": "fas fa-smile"
+},
+{
+"icon_class": "fas fa-smoking"
+},
+{
+"icon_class": "fas fa-snowflake"
+},
+{
+"icon_class": "fas fa-sort"
+},
+{
+"icon_class": "fas fa-sort-alpha-down"
+},
+{
+"icon_class": "fas fa-sort-alpha-up"
+},
+{
+"icon_class": "fas fa-sort-amount-down"
+},
+{
+"icon_class": "fas fa-sort-amount-up"
+},
+{
+"icon_class": "fas fa-sort-down"
+},
+{
+"icon_class": "fas fa-sort-numeric-down"
+},
+{
+"icon_class": "fas fa-sort-numeric-up"
+},
+{
+"icon_class": "fas fa-sort-up"
+},
+{
+"icon_class": "fas fa-space-shuttle"
+},
+{
+"icon_class": "fas fa-spinner"
+},
+{
+"icon_class": "fas fa-square"
+},
+{
+"icon_class": "fas fa-square-full"
+},
+{
+"icon_class": "fas fa-star"
+},
+{
+"icon_class": "fas fa-star-half"
+},
+{
+"icon_class": "fas fa-step-backward"
+},
+{
+"icon_class": "fas fa-step-forward"
+},
+{
+"icon_class": "fas fa-stethoscope"
+},
+{
+"icon_class": "fas fa-sticky-note"
+},
+{
+"icon_class": "fas fa-stop"
+},
+{
+"icon_class": "fas fa-stop-circle"
+},
+{
+"icon_class": "fas fa-stopwatch"
+},
+{
+"icon_class": "fas fa-street-view"
+},
+{
+"icon_class": "fas fa-strikethrough"
+},
+{
+"icon_class": "fas fa-subscript"
+},
+{
+"icon_class": "fas fa-subway"
+},
+{
+"icon_class": "fas fa-suitcase"
+},
+{
+"icon_class": "fas fa-sun"
+},
+{
+"icon_class": "fas fa-superscript"
+},
+{
+"icon_class": "fas fa-sync"
+},
+{
+"icon_class": "fas fa-sync-alt"
+},
+{
+"icon_class": "fas fa-syringe"
+},
+{
+"icon_class": "fas fa-table"
+},
+{
+"icon_class": "fas fa-table-tennis"
+},
+{
+"icon_class": "fas fa-tablet"
+},
+{
+"icon_class": "fas fa-tablet-alt"
+},
+{
+"icon_class": "fas fa-tablets"
+},
+{
+"icon_class": "fas fa-tachometer-alt"
+},
+{
+"icon_class": "fas fa-tag"
+},
+{
+"icon_class": "fas fa-tags"
+},
+{
+"icon_class": "fas fa-tape"
+},
+{
+"icon_class": "fas fa-tasks"
+},
+{
+"icon_class": "fas fa-taxi"
+},
+{
+"icon_class": "fas fa-terminal"
+},
+{
+"icon_class": "fas fa-text-height"
+},
+{
+"icon_class": "fas fa-text-width"
+},
+{
+"icon_class": "fas fa-th"
+},
+{
+"icon_class": "fas fa-th-large"
+},
+{
+"icon_class": "fas fa-th-list"
+},
+{
+"icon_class": "fas fa-thermometer"
+},
+{
+"icon_class": "fas fa-thermometer-empty"
+},
+{
+"icon_class": "fas fa-thermometer-full"
+},
+{
+"icon_class": "fas fa-thermometer-half"
+},
+{
+"icon_class": "fas fa-thermometer-quarter"
+},
+{
+"icon_class": "fas fa-thermometer-three-quarters"
+},
+{
+"icon_class": "fas fa-thumbs-down"
+},
+{
+"icon_class": "fas fa-thumbs-up"
+},
+{
+"icon_class": "fas fa-thumbtack"
+},
+{
+"icon_class": "fas fa-ticket-alt"
+},
+{
+"icon_class": "fas fa-times"
+},
+{
+"icon_class": "fas fa-times-circle"
+},
+{
+"icon_class": "fas fa-tint"
+},
+{
+"icon_class": "fas fa-toggle-off"
+},
+{
+"icon_class": "fas fa-toggle-on"
+},
+{
+"icon_class": "fas fa-trademark"
+},
+{
+"icon_class": "fas fa-train"
+},
+{
+"icon_class": "fas fa-transgender"
+},
+{
+"icon_class": "fas fa-transgender-alt"
+},
+{
+"icon_class": "fas fa-trash"
+},
+{
+"icon_class": "fas fa-trash-alt"
+},
+{
+"icon_class": "fas fa-tree"
+},
+{
+"icon_class": "fas fa-trophy"
+},
+{
+"icon_class": "fas fa-truck"
+},
+{
+"icon_class": "fas fa-truck-loading"
+},
+{
+"icon_class": "fas fa-truck-moving"
+},
+{
+"icon_class": "fas fa-tty"
+},
+{
+"icon_class": "fas fa-tv"
+},
+{
+"icon_class": "fas fa-umbrella"
+},
+{
+"icon_class": "fas fa-underline"
+},
+{
+"icon_class": "fas fa-undo"
+},
+{
+"icon_class": "fas fa-undo-alt"
+},
+{
+"icon_class": "fas fa-universal-access"
+},
+{
+"icon_class": "fas fa-university"
+},
+{
+"icon_class": "fas fa-unlink"
+},
+{
+"icon_class": "fas fa-unlock"
+},
+{
+"icon_class": "fas fa-unlock-alt"
+},
+{
+"icon_class": "fas fa-upload"
+},
+{
+"icon_class": "fas fa-user"
+},
+{
+"icon_class": "fas fa-user-circle"
+},
+{
+"icon_class": "fas fa-user-md"
+},
+{
+"icon_class": "fas fa-user-plus"
+},
+{
+"icon_class": "fas fa-user-secret"
+},
+{
+"icon_class": "fas fa-user-times"
+},
+{
+"icon_class": "fas fa-users"
+},
+{
+"icon_class": "fas fa-utensil-spoon"
+},
+{
+"icon_class": "fas fa-utensils"
+},
+{
+"icon_class": "fas fa-venus"
+},
+{
+"icon_class": "fas fa-venus-double"
+},
+{
+"icon_class": "fas fa-venus-mars"
+},
+{
+"icon_class": "fas fa-vial"
+},
+{
+"icon_class": "fas fa-vials"
+},
+{
+"icon_class": "fas fa-video"
+},
+{
+"icon_class": "fas fa-video-slash"
+},
+{
+"icon_class": "fas fa-volleyball-ball"
+},
+{
+"icon_class": "fas fa-volume-down"
+},
+{
+"icon_class": "fas fa-volume-off"
+},
+{
+"icon_class": "fas fa-volume-up"
+},
+{
+"icon_class": "fas fa-warehouse"
+},
+{
+"icon_class": "fas fa-weight"
+},
+{
+"icon_class": "fas fa-wheelchair"
+},
+{
+"icon_class": "fas fa-wifi"
+},
+{
+"icon_class": "fas fa-window-close"
+},
+{
+"icon_class": "fas fa-window-maximize"
+},
+{
+"icon_class": "fas fa-window-minimize"
+},
+{
+"icon_class": "fas fa-window-restore"
+},
+{
+"icon_class": "fas fa-wine-glass"
+},
+{
+"icon_class": "fas fa-won-sign"
+},
+{
+"icon_class": "fas fa-wrench"
+},
+{
+"icon_class": "fas fa-x-ray"
+},
+{
+"icon_class": "fas fa-yen-sign"
+},
+{
+"icon_class": "far fa-address-book"
+},
+{
+"icon_class": "far fa-address-card"
+},
+{
+"icon_class": "far fa-arrow-alt-circle-down"
+},
+{
+"icon_class": "far fa-arrow-alt-circle-left"
+},
+{
+"icon_class": "far fa-arrow-alt-circle-right"
+},
+{
+"icon_class": "far fa-arrow-alt-circle-up"
+},
+{
+"icon_class": "far fa-bell"
+},
+{
+"icon_class": "far fa-bell-slash"
+},
+{
+"icon_class": "far fa-bookmark"
+},
+{
+"icon_class": "far fa-building"
+},
+{
+"icon_class": "far fa-calendar"
+},
+{
+"icon_class": "far fa-calendar-alt"
+},
+{
+"icon_class": "far fa-calendar-check"
+},
+{
+"icon_class": "far fa-calendar-minus"
+},
+{
+"icon_class": "far fa-calendar-plus"
+},
+{
+"icon_class": "far fa-calendar-times"
+},
+{
+"icon_class": "far fa-caret-square-down"
+},
+{
+"icon_class": "far fa-caret-square-left"
+},
+{
+"icon_class": "far fa-caret-square-right"
+},
+{
+"icon_class": "far fa-caret-square-up"
+},
+{
+"icon_class": "far fa-chart-bar"
+},
+{
+"icon_class": "far fa-check-circle"
+},
+{
+"icon_class": "far fa-check-square"
+},
+{
+"icon_class": "far fa-circle"
+},
+{
+"icon_class": "far fa-clipboard"
+},
+{
+"icon_class": "far fa-clock"
+},
+{
+"icon_class": "far fa-clone"
+},
+{
+"icon_class": "far fa-closed-captioning"
+},
+{
+"icon_class": "far fa-comment"
+},
+{
+"icon_class": "far fa-comment-alt"
+},
+{
+"icon_class": "far fa-comments"
+},
+{
+"icon_class": "far fa-compass"
+},
+{
+"icon_class": "far fa-copy"
+},
+{
+"icon_class": "far fa-copyright"
+},
+{
+"icon_class": "far fa-credit-card"
+},
+{
+"icon_class": "far fa-dot-circle"
+},
+{
+"icon_class": "far fa-edit"
+},
+{
+"icon_class": "far fa-envelope"
+},
+{
+"icon_class": "far fa-envelope-open"
+},
+{
+"icon_class": "far fa-eye-slash"
+},
+{
+"icon_class": "far fa-file"
+},
+{
+"icon_class": "far fa-file-alt"
+},
+{
+"icon_class": "far fa-file-archive"
+},
+{
+"icon_class": "far fa-file-audio"
+},
+{
+"icon_class": "far fa-file-code"
+},
+{
+"icon_class": "far fa-file-excel"
+},
+{
+"icon_class": "far fa-file-image"
+},
+{
+"icon_class": "far fa-file-pdf"
+},
+{
+"icon_class": "far fa-file-powerpoint"
+},
+{
+"icon_class": "far fa-file-video"
+},
+{
+"icon_class": "far fa-file-word"
+},
+{
+"icon_class": "far fa-flag"
+},
+{
+"icon_class": "far fa-folder"
+},
+{
+"icon_class": "far fa-folder-open"
+},
+{
+"icon_class": "far fa-frown"
+},
+{
+"icon_class": "far fa-futbol"
+},
+{
+"icon_class": "far fa-gem"
+},
+{
+"icon_class": "far fa-hand-lizard"
+},
+{
+"icon_class": "far fa-hand-paper"
+},
+{
+"icon_class": "far fa-hand-peace"
+},
+{
+"icon_class": "far fa-hand-point-down"
+},
+{
+"icon_class": "far fa-hand-point-left"
+},
+{
+"icon_class": "far fa-hand-point-right"
+},
+{
+"icon_class": "far fa-hand-point-up"
+},
+{
+"icon_class": "far fa-hand-pointer"
+},
+{
+"icon_class": "far fa-hand-rock"
+},
+{
+"icon_class": "far fa-hand-scissors"
+},
+{
+"icon_class": "far fa-hand-spock"
+},
+{
+"icon_class": "far fa-handshake"
+},
+{
+"icon_class": "far fa-hdd"
+},
+{
+"icon_class": "far fa-heart"
+},
+{
+"icon_class": "far fa-hospital"
+},
+{
+"icon_class": "far fa-hourglass"
+},
+{
+"icon_class": "far fa-id-badge"
+},
+{
+"icon_class": "far fa-id-card"
+},
+{
+"icon_class": "far fa-image"
+},
+{
+"icon_class": "far fa-images"
+},
+{
+"icon_class": "far fa-keyboard"
+},
+{
+"icon_class": "far fa-lemon"
+},
+{
+"icon_class": "far fa-life-ring"
+},
+{
+"icon_class": "far fa-lightbulb"
+},
+{
+"icon_class": "far fa-list-alt"
+},
+{
+"icon_class": "far fa-map"
+},
+{
+"icon_class": "far fa-meh"
+},
+{
+"icon_class": "far fa-minus-square"
+},
+{
+"icon_class": "far fa-money-bill-alt"
+},
+{
+"icon_class": "far fa-moon"
+},
+{
+"icon_class": "far fa-newspaper"
+},
+{
+"icon_class": "far fa-object-group"
+},
+{
+"icon_class": "far fa-object-ungroup"
+},
+{
+"icon_class": "far fa-paper-plane"
+},
+{
+"icon_class": "far fa-pause-circle"
+},
+{
+"icon_class": "far fa-play-circle"
+},
+{
+"icon_class": "far fa-plus-square"
+},
+{
+"icon_class": "far fa-question-circle"
+},
+{
+"icon_class": "far fa-registered"
+},
+{
+"icon_class": "far fa-save"
+},
+{
+"icon_class": "far fa-share-square"
+},
+{
+"icon_class": "far fa-smile"
+},
+{
+"icon_class": "far fa-snowflake"
+},
+{
+"icon_class": "far fa-square"
+},
+{
+"icon_class": "far fa-star"
+},
+{
+"icon_class": "far fa-star-half"
+},
+{
+"icon_class": "far fa-sticky-note"
+},
+{
+"icon_class": "far fa-stop-circle"
+},
+{
+"icon_class": "far fa-sun"
+},
+{
+"icon_class": "far fa-thumbs-down"
+},
+{
+"icon_class": "far fa-thumbs-up"
+},
+{
+"icon_class": "far fa-times-circle"
+},
+{
+"icon_class": "far fa-trash-alt"
+},
+{
+"icon_class": "far fa-user"
+},
+{
+"icon_class": "far fa-user-circle"
+},
+{
+"icon_class": "far fa-window-close"
+},
+{
+"icon_class": "far fa-window-maximize"
+},
+{
+"icon_class": "far fa-window-minimize"
+},
+{
+"icon_class": "far fa-window-restore"
+},
+{
+"icon_class": "fab fa-500px"
+},
+{
+"icon_class": "fab fa-accessible-icon"
+},
+{
+"icon_class": "fab fa-accusoft"
+},
+{
+"icon_class": "fab fa-adn"
+},
+{
+"icon_class": "fab fa-adversal"
+},
+{
+"icon_class": "fab fa-affiliatetheme"
+},
+{
+"icon_class": "fab fa-algolia"
+},
+{
+"icon_class": "fab fa-amazon"
+},
+{
+"icon_class": "fab fa-amazon-pay"
+},
+{
+"icon_class": "fab fa-amilia"
+},
+{
+"icon_class": "fab fa-android"
+},
+{
+"icon_class": "fab fa-angellist"
+},
+{
+"icon_class": "fab fa-angrycreative"
+},
+{
+"icon_class": "fab fa-angular"
+},
+{
+"icon_class": "fab fa-app-store"
+},
+{
+"icon_class": "fab fa-app-store-ios"
+},
+{
+"icon_class": "fab fa-apper"
+},
+{
+"icon_class": "fab fa-apple"
+},
+{
+"icon_class": "fab fa-apple-pay"
+},
+{
+"icon_class": "fab fa-asymmetrik"
+},
+{
+"icon_class": "fab fa-audible"
+},
+{
+"icon_class": "fab fa-autoprefixer"
+},
+{
+"icon_class": "fab fa-avianex"
+},
+{
+"icon_class": "fab fa-aviato"
+},
+{
+"icon_class": "fab fa-aws"
+},
+{
+"icon_class": "fab fa-bandcamp"
+},
+{
+"icon_class": "fab fa-behance"
+},
+{
+"icon_class": "fab fa-behance-square"
+},
+{
+"icon_class": "fab fa-bimobject"
+},
+{
+"icon_class": "fab fa-bitbucket"
+},
+{
+"icon_class": "fab fa-bitcoin"
+},
+{
+"icon_class": "fab fa-bity"
+},
+{
+"icon_class": "fab fa-black-tie"
+},
+{
+"icon_class": "fab fa-blackberry"
+},
+{
+"icon_class": "fab fa-blogger"
+},
+{
+"icon_class": "fab fa-blogger-b"
+},
+{
+"icon_class": "fab fa-bluetooth"
+},
+{
+"icon_class": "fab fa-bluetooth-b"
+},
+{
+"icon_class": "fab fa-btc"
+},
+{
+"icon_class": "fab fa-buromobelexperte"
+},
+{
+"icon_class": "fab fa-buysellads"
+},
+{
+"icon_class": "fab fa-cc-amazon-pay"
+},
+{
+"icon_class": "fab fa-cc-amex"
+},
+{
+"icon_class": "fab fa-cc-apple-pay"
+},
+{
+"icon_class": "fab fa-cc-diners-club"
+},
+{
+"icon_class": "fab fa-cc-discover"
+},
+{
+"icon_class": "fab fa-cc-jcb"
+},
+{
+"icon_class": "fab fa-cc-mastercard"
+},
+{
+"icon_class": "fab fa-cc-paypal"
+},
+{
+"icon_class": "fab fa-cc-stripe"
+},
+{
+"icon_class": "fab fa-cc-visa"
+},
+{
+"icon_class": "fab fa-centercode"
+},
+{
+"icon_class": "fab fa-chrome"
+},
+{
+"icon_class": "fab fa-cloudscale"
+},
+{
+"icon_class": "fab fa-cloudsmith"
+},
+{
+"icon_class": "fab fa-cloudversify"
+},
+{
+"icon_class": "fab fa-codepen"
+},
+{
+"icon_class": "fab fa-codiepie"
+},
+{
+"icon_class": "fab fa-connectdevelop"
+},
+{
+"icon_class": "fab fa-contao"
+},
+{
+"icon_class": "fab fa-cpanel"
+},
+{
+"icon_class": "fab fa-creative-commons"
+},
+{
+"icon_class": "fab fa-css3"
+},
+{
+"icon_class": "fab fa-css3-alt"
+},
+{
+"icon_class": "fab fa-cuttlefish"
+},
+{
+"icon_class": "fab fa-d-and-d"
+},
+{
+"icon_class": "fab fa-dashcube"
+},
+{
+"icon_class": "fab fa-delicious"
+},
+{
+"icon_class": "fab fa-deploydog"
+},
+{
+"icon_class": "fab fa-deskpro"
+},
+{
+"icon_class": "fab fa-deviantart"
+},
+{
+"icon_class": "fab fa-digg"
+},
+{
+"icon_class": "fab fa-digital-ocean"
+},
+{
+"icon_class": "fab fa-discord"
+},
+{
+"icon_class": "fab fa-discourse"
+},
+{
+"icon_class": "fab fa-dochub"
+},
+{
+"icon_class": "fab fa-docker"
+},
+{
+"icon_class": "fab fa-draft2digital"
+},
+{
+"icon_class": "fab fa-dribbble"
+},
+{
+"icon_class": "fab fa-dribbble-square"
+},
+{
+"icon_class": "fab fa-dropbox"
+},
+{
+"icon_class": "fab fa-drupal"
+},
+{
+"icon_class": "fab fa-dyalog"
+},
+{
+"icon_class": "fab fa-earlybirds"
+},
+{
+"icon_class": "fab fa-edge"
+},
+{
+"icon_class": "fab fa-elementor"
+},
+{
+"icon_class": "fab fa-ember"
+},
+{
+"icon_class": "fab fa-empire"
+},
+{
+"icon_class": "fab fa-envira"
+},
+{
+"icon_class": "fab fa-erlang"
+},
+{
+"icon_class": "fab fa-ethereum"
+},
+{
+"icon_class": "fab fa-etsy"
+},
+{
+"icon_class": "fab fa-expeditedssl"
+},
+{
+"icon_class": "fab fa-facebook"
+},
+{
+"icon_class": "fab fa-facebook-f"
+},
+{
+"icon_class": "fab fa-facebook-messenger"
+},
+{
+"icon_class": "fab fa-facebook-square"
+},
+{
+"icon_class": "fab fa-firefox"
+},
+{
+"icon_class": "fab fa-first-order"
+},
+{
+"icon_class": "fab fa-firstdraft"
+},
+{
+"icon_class": "fab fa-flickr"
+},
+{
+"icon_class": "fab fa-flipboard"
+},
+{
+"icon_class": "fab fa-fly"
+},
+{
+"icon_class": "fab fa-font-awesome"
+},
+{
+"icon_class": "fab fa-font-awesome-alt"
+},
+{
+"icon_class": "fab fa-font-awesome-flag"
+},
+{
+"icon_class": "fab fa-fonticons"
+},
+{
+"icon_class": "fab fa-fonticons-fi"
+},
+{
+"icon_class": "fab fa-fort-awesome"
+},
+{
+"icon_class": "fab fa-fort-awesome-alt"
+},
+{
+"icon_class": "fab fa-forumbee"
+},
+{
+"icon_class": "fab fa-foursquare"
+},
+{
+"icon_class": "fab fa-free-code-camp"
+},
+{
+"icon_class": "fab fa-freebsd"
+},
+{
+"icon_class": "fab fa-get-pocket"
+},
+{
+"icon_class": "fab fa-gg"
+},
+{
+"icon_class": "fab fa-gg-circle"
+},
+{
+"icon_class": "fab fa-git"
+},
+{
+"icon_class": "fab fa-git-square"
+},
+{
+"icon_class": "fab fa-github"
+},
+{
+"icon_class": "fab fa-github-alt"
+},
+{
+"icon_class": "fab fa-github-square"
+},
+{
+"icon_class": "fab fa-gitkraken"
+},
+{
+"icon_class": "fab fa-gitlab"
+},
+{
+"icon_class": "fab fa-gitter"
+},
+{
+"icon_class": "fab fa-glide"
+},
+{
+"icon_class": "fab fa-glide-g"
+},
+{
+"icon_class": "fab fa-gofore"
+},
+{
+"icon_class": "fab fa-goodreads"
+},
+{
+"icon_class": "fab fa-goodreads-g"
+},
+{
+"icon_class": "fab fa-google"
+},
+{
+"icon_class": "fab fa-google-drive"
+},
+{
+"icon_class": "fab fa-google-play"
+},
+{
+"icon_class": "fab fa-google-plus"
+},
+{
+"icon_class": "fab fa-google-plus-g"
+},
+{
+"icon_class": "fab fa-google-plus-square"
+},
+{
+"icon_class": "fab fa-google-wallet"
+},
+{
+"icon_class": "fab fa-gratipay"
+},
+{
+"icon_class": "fab fa-grav"
+},
+{
+"icon_class": "fab fa-gripfire"
+},
+{
+"icon_class": "fab fa-grunt"
+},
+{
+"icon_class": "fab fa-gulp"
+},
+{
+"icon_class": "fab fa-hacker-news"
+},
+{
+"icon_class": "fab fa-hacker-news-square"
+},
+{
+"icon_class": "fab fa-hips"
+},
+{
+"icon_class": "fab fa-hire-a-helper"
+},
+{
+"icon_class": "fab fa-hooli"
+},
+{
+"icon_class": "fab fa-hotjar"
+},
+{
+"icon_class": "fab fa-houzz"
+},
+{
+"icon_class": "fab fa-html5"
+},
+{
+"icon_class": "fab fa-hubspot"
+},
+{
+"icon_class": "fab fa-imdb"
+},
+{
+"icon_class": "fab fa-instagram"
+},
+{
+"icon_class": "fab fa-internet-explorer"
+},
+{
+"icon_class": "fab fa-ioxhost"
+},
+{
+"icon_class": "fab fa-itunes"
+},
+{
+"icon_class": "fab fa-itunes-note"
+},
+{
+"icon_class": "fab fa-jenkins"
+},
+{
+"icon_class": "fab fa-joget"
+},
+{
+"icon_class": "fab fa-joomla"
+},
+{
+"icon_class": "fab fa-js"
+},
+{
+"icon_class": "fab fa-js-square"
+},
+{
+"icon_class": "fab fa-jsfiddle"
+},
+{
+"icon_class": "fab fa-keycdn"
+},
+{
+"icon_class": "fab fa-kickstarter"
+},
+{
+"icon_class": "fab fa-kickstarter-k"
+},
+{
+"icon_class": "fab fa-korvue"
+},
+{
+"icon_class": "fab fa-laravel"
+},
+{
+"icon_class": "fab fa-lastfm"
+},
+{
+"icon_class": "fab fa-lastfm-square"
+},
+{
+"icon_class": "fab fa-leanpub"
+},
+{
+"icon_class": "fab fa-less"
+},
+{
+"icon_class": "fab fa-line"
+},
+{
+"icon_class": "fab fa-linkedin"
+},
+{
+"icon_class": "fab fa-linkedin-in"
+},
+{
+"icon_class": "fab fa-linode"
+},
+{
+"icon_class": "fab fa-linux"
+},
+{
+"icon_class": "fab fa-lyft"
+},
+{
+"icon_class": "fab fa-magento"
+},
+{
+"icon_class": "fab fa-maxcdn"
+},
+{
+"icon_class": "fab fa-medapps"
+},
+{
+"icon_class": "fab fa-medium"
+},
+{
+"icon_class": "fab fa-medium-m"
+},
+{
+"icon_class": "fab fa-medrt"
+},
+{
+"icon_class": "fab fa-meetup"
+},
+{
+"icon_class": "fab fa-microsoft"
+},
+{
+"icon_class": "fab fa-mix"
+},
+{
+"icon_class": "fab fa-mixcloud"
+},
+{
+"icon_class": "fab fa-mizuni"
+},
+{
+"icon_class": "fab fa-modx"
+},
+{
+"icon_class": "fab fa-monero"
+},
+{
+"icon_class": "fab fa-napster"
+},
+{
+"icon_class": "fab fa-nintendo-switch"
+},
+{
+"icon_class": "fab fa-node"
+},
+{
+"icon_class": "fab fa-node-js"
+},
+{
+"icon_class": "fab fa-npm"
+},
+{
+"icon_class": "fab fa-ns8"
+},
+{
+"icon_class": "fab fa-nutritionix"
+},
+{
+"icon_class": "fab fa-odnoklassniki"
+},
+{
+"icon_class": "fab fa-odnoklassniki-square"
+},
+{
+"icon_class": "fab fa-opencart"
+},
+{
+"icon_class": "fab fa-openid"
+},
+{
+"icon_class": "fab fa-opera"
+},
+{
+"icon_class": "fab fa-optin-monster"
+},
+{
+"icon_class": "fab fa-osi"
+},
+{
+"icon_class": "fab fa-page4"
+},
+{
+"icon_class": "fab fa-pagelines"
+},
+{
+"icon_class": "fab fa-palfed"
+},
+{
+"icon_class": "fab fa-patreon"
+},
+{
+"icon_class": "fab fa-paypal"
+},
+{
+"icon_class": "fab fa-periscope"
+},
+{
+"icon_class": "fab fa-phabricator"
+},
+{
+"icon_class": "fab fa-phoenix-framework"
+},
+{
+"icon_class": "fab fa-php"
+},
+{
+"icon_class": "fab fa-pied-piper"
+},
+{
+"icon_class": "fab fa-pied-piper-alt"
+},
+{
+"icon_class": "fab fa-pied-piper-pp"
+},
+{
+"icon_class": "fab fa-pinterest"
+},
+{
+"icon_class": "fab fa-pinterest-p"
+},
+{
+"icon_class": "fab fa-pinterest-square"
+},
+{
+"icon_class": "fab fa-playstation"
+},
+{
+"icon_class": "fab fa-product-hunt"
+},
+{
+"icon_class": "fab fa-pushed"
+},
+{
+"icon_class": "fab fa-python"
+},
+{
+"icon_class": "fab fa-qq"
+},
+{
+"icon_class": "fab fa-quinscape"
+},
+{
+"icon_class": "fab fa-quora"
+},
+{
+"icon_class": "fab fa-ravelry"
+},
+{
+"icon_class": "fab fa-react"
+},
+{
+"icon_class": "fab fa-readme"
+},
+{
+"icon_class": "fab fa-rebel"
+},
+{
+"icon_class": "fab fa-red-river"
+},
+{
+"icon_class": "fab fa-reddit"
+},
+{
+"icon_class": "fab fa-reddit-alien"
+},
+{
+"icon_class": "fab fa-reddit-square"
+},
+{
+"icon_class": "fab fa-rendact"
+},
+{
+"icon_class": "fab fa-renren"
+},
+{
+"icon_class": "fab fa-replyd"
+},
+{
+"icon_class": "fab fa-resolving"
+},
+{
+"icon_class": "fab fa-rocketchat"
+},
+{
+"icon_class": "fab fa-rockrms"
+},
+{
+"icon_class": "fab fa-safari"
+},
+{
+"icon_class": "fab fa-sass"
+},
+{
+"icon_class": "fab fa-schlix"
+},
+{
+"icon_class": "fab fa-scribd"
+},
+{
+"icon_class": "fab fa-searchengin"
+},
+{
+"icon_class": "fab fa-sellcast"
+},
+{
+"icon_class": "fab fa-sellsy"
+},
+{
+"icon_class": "fab fa-servicestack"
+},
+{
+"icon_class": "fab fa-shirtsinbulk"
+},
+{
+"icon_class": "fab fa-simplybuilt"
+},
+{
+"icon_class": "fab fa-sistrix"
+},
+{
+"icon_class": "fab fa-skyatlas"
+},
+{
+"icon_class": "fab fa-skype"
+},
+{
+"icon_class": "fab fa-slack"
+},
+{
+"icon_class": "fab fa-slack-hash"
+},
+{
+"icon_class": "fab fa-slideshare"
+},
+{
+"icon_class": "fab fa-snapchat"
+},
+{
+"icon_class": "fab fa-snapchat-ghost"
+},
+{
+"icon_class": "fab fa-snapchat-square"
+},
+{
+"icon_class": "fab fa-soundcloud"
+},
+{
+"icon_class": "fab fa-speakap"
+},
+{
+"icon_class": "fab fa-spotify"
+},
+{
+"icon_class": "fab fa-stack-exchange"
+},
+{
+"icon_class": "fab fa-stack-overflow"
+},
+{
+"icon_class": "fab fa-staylinked"
+},
+{
+"icon_class": "fab fa-steam"
+},
+{
+"icon_class": "fab fa-steam-square"
+},
+{
+"icon_class": "fab fa-steam-symbol"
+},
+{
+"icon_class": "fab fa-sticker-mule"
+},
+{
+"icon_class": "fab fa-strava"
+},
+{
+"icon_class": "fab fa-stripe"
+},
+{
+"icon_class": "fab fa-stripe-s"
+},
+{
+"icon_class": "fab fa-studiovinari"
+},
+{
+"icon_class": "fab fa-stumbleupon"
+},
+{
+"icon_class": "fab fa-stumbleupon-circle"
+},
+{
+"icon_class": "fab fa-superpowers"
+},
+{
+"icon_class": "fab fa-supple"
+},
+{
+"icon_class": "fab fa-telegram"
+},
+{
+"icon_class": "fab fa-telegram-plane"
+},
+{
+"icon_class": "fab fa-tencent-weibo"
+},
+{
+"icon_class": "fab fa-themeisle"
+},
+{
+"icon_class": "fab fa-trello"
+},
+{
+"icon_class": "fab fa-tripadvisor"
+},
+{
+"icon_class": "fab fa-tumblr"
+},
+{
+"icon_class": "fab fa-tumblr-square"
+},
+{
+"icon_class": "fab fa-twitch"
+},
+{
+"icon_class": "fab fa-twitter"
+},
+{
+"icon_class": "fab fa-twitter-square"
+},
+{
+"icon_class": "fab fa-typo3"
+},
+{
+"icon_class": "fab fa-uber"
+},
+{
+"icon_class": "fab fa-uikit"
+},
+{
+"icon_class": "fab fa-uniregistry"
+},
+{
+"icon_class": "fab fa-untappd"
+},
+{
+"icon_class": "fab fa-usb"
+},
+{
+"icon_class": "fab fa-ussunnah"
+},
+{
+"icon_class": "fab fa-vaadin"
+},
+{
+"icon_class": "fab fa-viacoin"
+},
+{
+"icon_class": "fab fa-viadeo"
+},
+{
+"icon_class": "fab fa-viadeo-square"
+},
+{
+"icon_class": "fab fa-viber"
+},
+{
+"icon_class": "fab fa-vimeo"
+},
+{
+"icon_class": "fab fa-vimeo-square"
+},
+{
+"icon_class": "fab fa-vimeo-v"
+},
+{
+"icon_class": "fab fa-vine"
+},
+{
+"icon_class": "fab fa-vk"
+},
+{
+"icon_class": "fab fa-vnv"
+},
+{
+"icon_class": "fab fa-vuejs"
+},
+{
+"icon_class": "fab fa-weibo"
+},
+{
+"icon_class": "fab fa-weixin"
+},
+{
+"icon_class": "fab fa-whatsapp"
+},
+{
+"icon_class": "fab fa-whatsapp-square"
+},
+{
+"icon_class": "fab fa-whmcs"
+},
+{
+"icon_class": "fab fa-wikipedia-w"
+},
+{
+"icon_class": "fab fa-windows"
+},
+{
+"icon_class": "fab fa-wordpress"
+},
+{
+"icon_class": "fab fa-wordpress-simple"
+},
+{
+"icon_class": "fab fa-wpbeginner"
+},
+{
+"icon_class": "fab fa-wpexplorer"
+},
+{
+"icon_class": "fab fa-wpforms"
+},
+{
+"icon_class": "fab fa-xbox"
+},
+{
+"icon_class": "fab fa-xing"
+},
+{
+"icon_class": "fab fa-xing-square"
+},
+{
+"icon_class": "fab fa-y-combinator"
+},
+{
+"icon_class": "fab fa-yahoo"
+},
+{
+"icon_class": "fab fa-yandex"
+},
+{
+"icon_class": "fab fa-yandex-international"
+},
+{
+"icon_class": "fab fa-yelp"
+},
+{
+"icon_class": "fab fa-yoast"
+},
+{
+"icon_class": "fab fa-youtube"
+},
+{
+"icon_class": "fab fa-youtube-square"
+}
+]
+}

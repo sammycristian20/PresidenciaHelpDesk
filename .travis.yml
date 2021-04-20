@@ -1,0 +1,46 @@
+language: php
+
+php:
+  - 7.0
+  
+#before_script:
+#  - mysql -e 'create database homestead_test;'
+#  - php artisan migrate
+#  - php artisan db:seed
+#  - cp .example.env .env
+#  - eval "$(ssh-agent -s)" #start the ssh agent
+#  - chmod 600 .travis/deploy_key.pem # this key should have push access
+#  - ssh-add .travis/deploy_key.pem
+#  - git remote add deploy DEPLOY_REPO_URI_GOES_HERE
+#  - git push deploy
+  #- find /home/travis/build/ladybirdweb/Faveo-Helpdesk-Pro -type f -exec curl -u $FTP_USER:$FTP_PASSWORD --ftp-create-dirs -T {} ftp://5.189.187.205/public_html/latesthelpdesk/{} \;
+  
+#script:
+#  - vendor/bin/phpunit
+  
+# env:
+#   global:
+#     - "FTP_USER=faveodemo"
+#     - "FTP_PASSWORD=5pI#@$KVRD"
+    
+#after_success:
+#    - find /home/travis/build/ladybirdweb/Faveo-Helpdesk-Pro -type f -exec curl -u $FTP_USER:$FTP_PASSWORD --ftp-create-dirs -T {} ftp://5.189.187.205/public_html/stablehelpdesk/{} \;
+before_script:
+    #- export composer install --no-dev -o
+    - mkdir /home/travis/build/ladybirdweb/build
+    - mv $TRAVIS_BUILD_DIR /home/travis/build/ladybirdweb/build
+    - cd /home/travis/build/ladybirdweb
+    - tar -czf package.tgz build
+    - export SSHPASS=TkZw45U9sFaseJ1s
+    - sshpass -e scp package.tgz root@5.189.187.205:/home/faveo/public_html/vijay/
+    - sshpass -e ssh root@5.189.187.205 /home/faveo/public_html/vijay/deploy.sh
+#env:
+#    global:
+#        - secure: "tV6pn0qI4P2XCexVQ4g8G0UCmnCd7zeh2dWAVXO+rddTfFve6w1+KyLQYW4LkzzAes7zVTPL2LhwHwASVh54dJunvd0QM/lKQ2TMVWi0gV0HB867u9oq5lHILNb2cvOdQwm+Hl7e78JZRU/KcS+UXlVOK4ae0uHQTD3w/gKzCCCvV4jk//+zH18+0AXAFr/NzNtFQ3yxSwnyiaOXwTmp7JSK8j17II98dSABmCXkKyRhnErpM6LGKqqQMKCbNPySnu9iC5yameHwjzES2aay+OiJhUssJnmxhdlsNv7v6D9fBolHPH6uMo867KKHHYWDPFbRgANOV4QjWEDx3GtILEbOS43waeAD+iUYmukdk6Gcszquofxs53yLhuLjDW31KoAWU/E6hG5bcjxx2IZox/oOB7QeGtaIayL58PfyBQh2HbxPlHuiB1zdeJ4sXmQeJHCJ4bV89DKLsbEbBd35DpkHNwVxb0G0MWNkns5F5Mq2AhcNVeX+qK9CrEAZjx4NNxgjxtK3k1ScooxoL56T16KBmbV6gowv6w11wzot3r3s7m9EfVrQ70zKAPq7gxuN5Ck2CyVRvvkRRjSU6U2gKVGtLLoSOQifYLGjkW02a0OTNXzC7hBTY68qdhzkxjhdQWCnPrqAxwGCWUB5Jptf4GjBomuhO9uZhQjGsHqjAIM="
+#        - secure: "IGuSp0YYmo2R63SYAYwO0Gbu47bonfee57Dw8cMwvaErCfd+3WKNDwek6Va0OPTDieaqApOyMO+G/Dv3qkSAw1t+n4Cs94UwdkG2C8dSDUBXD9wIufqTNRUTGEUpuf9qV55fobXx5hcDM6jovcYaDNWmpLrhfSio6J/xLHhSJcwZkSbmicnrdvVbQGOqtaZbVT9D870WjSOAKCYWJnbWm7oA2PKGLEBk5oK4J2ewqcAhuBQg96pFvMXW+Wu+I2YSqsOZW5YWP1ro3dYU/jB/sndKjUOwh4dW+1LqstVC8CxFqNWNQKNsthp4uXrabwJg1QAFVGmjMvlmFBIkU5YK950EQ9Rga1Ze+3vDH+HMCvwhVVe/TGAMOHtAMl9syaNEz102mAVOMzAJKB2lm3YtaJDxWkYN8mZR7VjNEIDHteut14pr6URNHN0V6pDhxvI1LiRgEAl1/9TnpcWxix0JHHapXiiUmahDvhLmcwUv68N9EN/nPKNL7+0W3g2cKS86Z4s8V/H5fJk2A/5LF7nmclnFC69liv4MycVk0qlNB5AkWNp+XmNGlO39aZ+SULfFjo0auEFqAhQZqU4TV1vYy3MXUJqOfO/K6uq8XtjiA+xaY705Vo4BcIiVTvdqpMIQZITlXgND0eMlQ3FLdQScY/nrVjw8eFUCktYtHRZgnHU="
+#        - secure: "HlAbyjjY0SL54WOZOR5cY09/iOM9XiDFS0KGBwesvvupix8a+fEYedD4ubXjFV0t3g2Tq5wKADRYrPNEOUYVATgo6/RL1bCWhdGWVAmPshW1WE0cdOUA6rmC4GCdcq/KATUmGOPGr/ogWfCDedkXE+fLeuODxYfpPQD/5Yy7GHN5TxjMxfewdO1Umy39P/KxvyNZ9DHeM3TNl9vqQY5TWpyRlaOjfDZJszurqwZAjQOiwGzY3C/SWkn0Y73OozJAS2OQEhTZTaVlbgFCTImynt9F7Rxnaj3p0qvj+lrO9nnBZuGXOGq571ZqfQT1CTAZzJFzeIe6aZqE2V/p2/EYF6byEvfzviQeKv8tq7cPg1QpUf6tERAfWzjlhf7QtLIGS76mBozvktpTXoI5cMhBCbO2GwP3Z7SbJWCFpviNTyKcUWW/PBE/Il0yHUDukVO84jAvHHCqumP0hJJ2bMot47q8T1qFlwzxxnPfuCL4cj1vmAFGdDd5/O6MVZlsuaGcG6GApHkjHFfu1TJMEHmV5mLqcCLpyZWqaIziyY3KpHtacOsIdnAR2Ej3qnQdQXBt0OK64H3jx4wrp0tOxAhJmfKJ3gRh74J0jCtWTAvY6rnGhQoSzQLWDDqGL+D0qGPvQKXr68oy8fyw+CSn32a0gjh77Xy8sO/r4ooTv6B/wZI="
+#        - secure: "vxkH55FwSwwr4WS2NMrjQB2D4tXe1tE7BbMjXJHlSC/VEq9RnemeTprEupq+6mY4TXZPe4dmJamid9FVBJnQ2tnq66PY6IOaRLwvznloobep3LGfqNlJQZpQfnMk8C3ZwPCwrwWpsDWhNIXpdNROjEIoSevzzde1cRmpvGg8HGuEbPGLLC3L2+2Lo9+ofxA93QN1mImOIAhoSmeBzpizxFZ0kitba8kUGrXn5nqN+8ADN1uBVpUhYdsxB4bV3HumXPJj8N2Ri0sE5a45UXsdZjLSYc2L9Z+Kr2aAPFYH1b097le0kxbu+0xKKWyIprrDG0f8upv0OE6Dd+jQlxR9u+wtNzO4iiwhLdHyGFMd+tAzLNJVtgznpJ/wXWvFhORKKOap12uAylrq2sbXeXSEhkkoYDkiJXc7xY3WbVysT1iAGW+eWGNXBkb8W+CYpCDWVIzq6Qmpo0INJ0jrs9RR7T4FNb+qACe6T7JJXi2GpHufWQUZkEATMhI0qlsw5nfxjcy9dzL1MPxC/HYZtIvB+fENQOrVVEpMLZYbF3YTwmmF+Clo3HJtjBoPEx5TcvuMr9lw0p6r2u0MnFV0doSArx/7Xf4CWg/eLOBMnslnglXLjdeel77BkNreFR1zs77hHbIsz+e3mTsvvw+l9qtaYow1ZdftJ8+An7Rrb1Q06Q8=" 
+addons:
+    apt:
+        packages:
+            - sshpass

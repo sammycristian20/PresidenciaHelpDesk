@@ -1,0 +1,16 @@
+* text=auto
+*.css linguist-vendored
+*.less linguist-vendored
+*.js linguist-vendored
+tests/Browser export-ignore
+tests/Feature export-ignore
+tests/Unit export-ignore
+tests/DBTestCase.php export-ignore
+tests/AddOnTestCase.php export-ignore
+phpunit.xml export-ignore
+vendor/bin/ export-ignore
+app/Plugins/ServiceDesk export-ignore
+app/Plugins/LanguageMigrate export-ignore
+storage/activate-plugin.txt export-ignore
+app/Plugins/AllianceCRM export-ignore
+app/Plugins/CRTWorkflow export-ignore
